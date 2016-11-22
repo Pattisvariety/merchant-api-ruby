@@ -1,7 +1,7 @@
 module TophatterMerchant
   class ApiKey < Resource
 
-    attr_accessor :id, :access_token
+    attr_accessor :id, :access_token, :created_at
 
     class << self
 
