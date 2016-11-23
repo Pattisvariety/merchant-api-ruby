@@ -19,10 +19,9 @@ module TophatterMerchant
         Variation.new get(url: "#{path}/retrieve.json", params: { identifier: identifier })
       end
 
+      # ap Variation.create(product_identifier: '6631A', identifier: '6631A-GRAY', color: 'Gray', quantity: 33).to_h
       def create(params)
-        post(url: "#{path}.json", params: params).map do |hash|
-          Variation.new(hash)
-        end
+        Variation.new post(url: "#{path}.json", params: params)
       end
 
       # ap TophatterMerchant::Variation.update('FOOBAR-R', quantity: 100).to_h
