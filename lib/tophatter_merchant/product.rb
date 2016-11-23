@@ -80,7 +80,7 @@ module TophatterMerchant
         if pagination.present?
           result['results'] = result['results'].map { |hash| Product.new(hash) }
         else
-          result.map { |hash| Product.new(hash) }
+          result = result.map { |hash| Product.new(hash) }
         end
 
         result
