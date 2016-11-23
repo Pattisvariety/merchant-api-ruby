@@ -3,7 +3,7 @@ Full documentation is available [here](https://tophatter.readme.io/v1/docs).
 
 ### Installation
 ```ruby
-gem 'tophatter-merchant'
+gem 'tophatter-merchant', require: 'tophatter_merchant'
 ```
 
 ### Console Testing (Development)
