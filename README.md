@@ -2,9 +2,11 @@
 Full documentation is available [here](https://tophatter.readme.io/v1/docs).
 
 ### Console Testing (Development)
+```bash
 echo http://tophatter.dev/merchant_api/v1 > .api_host
 echo a42880c4b7d0809300bed27c453f883d > .access_token
 bin/console
+```
 
 #### Authentication
 ```ruby
