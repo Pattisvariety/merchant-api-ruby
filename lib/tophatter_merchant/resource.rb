@@ -70,23 +70,13 @@ module TophatterMerchant
           raise BadContentTypeException.new, "The server didn't return JSON. You probably made a bad request." if response.headers[:content_type] == 'text/html; charset=utf-8'
           JSON.parse(response.body)
         rescue RestClient::Request::Unauthorized => e
-          error = begin
-            JSON.parse(e.response)
-          rescue
-            {}
-          end
-          raise UnauthorizedException.new, error['message']
+          raise UnauthorizedException.new, parse_error(e, e.message)
         rescue RestClient::BadRequest => e
-          error = begin
-            JSON.parse(e.response)
-          rescue
-            {}
-          end
-          raise BadRequestException.new, error['message']
-        rescue RestClient::ResourceNotFound
-          raise NotFoundException.new, 'The API path you requested does not exist.'
-        rescue RestClient::InternalServerError
-          raise ServerErrorException.new, 'The server encountered an internal error. This is probably a bug, and you should contact support.'
+          raise BadRequestException.new, parse_error(e, e.message)
+        rescue RestClient::ResourceNotFound => e
+          raise NotFoundException.new, parse_error(e, 'The API path you requested does not exist.')
+        rescue RestClient::InternalServerError => e
+          raise ServerErrorException.new, parse_error(e, 'The server encountered an internal error. This is probably a bug, and you should contact support.')
         end
       end
 
@@ -102,6 +92,17 @@ module TophatterMerchant
 
       def path
         TophatterMerchant.api_path
+      end
+
+      private
+
+      def parse_error(exception, fallback)
+        error = begin
+          JSON.parse(exception.response)
+        rescue
+          {}
+        end
+        raise BadRequestException.new, error['message'] || fallback
       end
 
     end

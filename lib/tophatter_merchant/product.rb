@@ -10,8 +10,8 @@ module TophatterMerchant
     attr_accessor :buy_one_get_one_price, :accessory_price, :accessory_description # Upsells
     attr_accessor :primary_image, :extra_images, :all_images # Images
     attr_accessor :slug, :ratings_average, :ratings_count # Ratings
-    attr_accessor :created_at, :updated_at, :disabled_at, :deleted_at, :blacklisted_at, :admin_hold_at # Timestamps
-    attr_accessor :slug, :internal_id # Other
+    attr_accessor :created_at, :updated_at, :disabled_at, :deleted_at # Timestamps
+    attr_accessor :blacklisted_at, :admin_hold_at, :slug, :internal_id # Other
 
     def id
       created_at.present? ? identifier : nil
