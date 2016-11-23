@@ -3,3 +3,5 @@ Gemfile.lock
 *.swp
 /.bundle
 .idea
+.api_path
+.access_token
