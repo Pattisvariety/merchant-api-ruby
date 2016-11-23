@@ -77,37 +77,37 @@ TophatterMerchant::Product.enable('6631A')
 
 #### Retrieve a specific variation.
 ```ruby
-ap TophatterMerchant::Variation.retrieve('6631A-BLACK').to_h
+TophatterMerchant::Variation.retrieve('6631A-BLACK')
 ```
 
 #### Create a variation.
 ```ruby
-ap TophatterMerchant::Variation.create(product_identifier: '6631A', identifier: '6631A-PINK', color: 'Pink', quantity: 33).to_h
+TophatterMerchant::Variation.create(product_identifier: '6631A', identifier: '6631A-PINK', color: 'Pink', quantity: 33)
 ```
 
 #### Update a variation.
 ```ruby
-ap TophatterMerchant::Variation.update('6631A-PINK', quantity: 999).to_h
+TophatterMerchant::Variation.update('6631A-PINK', quantity: 999)
 ```
 
 ### Orders
 
 #### List all orders.
 ```ruby
-ap TophatterMerchant::Order.all(filter: 'unfulfilled', page: 1, per_page: 100).map(&:to_h)
+TophatterMerchant::Order.all(filter: 'unfulfilled', page: 1, per_page: 100)
 ```
 
 #### Retrieve a specific order.
 ```ruby
-ap TophatterMerchant::Order.retrieve(1035509247).to_h
+TophatterMerchant::Order.retrieve(1035509247)
 ```
 
 #### Fulfill an order.
 ```ruby
-ap TophatterMerchant::Order.fulfill(1035509247, carrier: 'USPS', tracking_number: '9400111899562173406594')
+TophatterMerchant::Order.fulfill(1035509247, carrier: 'USPS', tracking_number: '9400111899562173406594')
 ```
 
 #### Refund an order.
 ```ruby
-ap TophatterMerchant::Order.refund(1035509249, type: 'full', reason: 'other').to_h
+TophatterMerchant::Order.refund(1035509249, type: 'full', reason: 'other')
 ```
