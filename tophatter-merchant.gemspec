@@ -10,8 +10,8 @@ Gem::Specification.new do |s|
   s.authors     = ['Chris Estreich']
   s.email       = ['chris@tophatter.com']
   s.homepage    = 'https://github.com/tophatter/merchant-api-ruby'
-  s.summary     = 'The Tophatter merchant platform is an e-commerce platform. It allows merchants to upload and manage inventory for sale on Tophatter.'
-  s.description = 'The Tophatter merchant platform is an e-commerce platform. It allows merchants to upload and manage inventory for sale on Tophatter.'
+  s.summary     = 'The Tophatter merchant platform is an e-commerce platform. It allows merchants to manage inventory and fulfill orders on Tophatter.'
+  s.description = 'The Tophatter merchant platform is an e-commerce platform. It allows merchants to manage inventory and fulfill orders on Tophatter.'
 
   s.required_ruby_version = '~> 2.0'
 
