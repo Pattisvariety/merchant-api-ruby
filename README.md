@@ -8,7 +8,7 @@ echo a42880c4b7d0809300bed27c453f883d > .access_token
 bin/console
 ```
 
-#### Authentication
+### API Authentication
 ```ruby
 TophatterMerchant.access_token = <YOUR ACCESS TOKEN>
 ```
