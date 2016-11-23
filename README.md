@@ -1,6 +1,11 @@
 ### Tophatter Merchant API
 Full documentation is available [here](https://tophatter.readme.io/v1/docs).
 
+### Installation
+```ruby
+gem 'tophatter-merchant'
+```
+
 ### Console Testing (Development)
 ```bash
 echo http://tophatter.dev/merchant_api/v1 > .api_host

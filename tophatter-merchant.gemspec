@@ -10,13 +10,13 @@ Gem::Specification.new do |s|
   s.authors     = ['Chris Estreich']
   s.email       = ['chris@tophatter.com']
   s.homepage    = 'https://github.com/tophatter/merchant-api-ruby'
-  s.summary     = 'The Tophatter merchant platform is an e-commerce platform. It allows merchants to manage inventory and fulfill orders on Tophatter.'
+  s.summary     = 'Manage your inventory and fulfill orders on Tophatter.'
   s.description = 'The Tophatter merchant platform is an e-commerce platform. It allows merchants to manage inventory and fulfill orders on Tophatter.'
 
   s.required_ruby_version = '~> 2.0'
 
-  s.add_dependency 'rest-client'
-  s.add_dependency 'activemodel'
+  s.add_dependency 'rest-client', '~> 1.6'
+  s.add_dependency 'activemodel', '~> 4.2'
 
   s.post_install_message = 'Documentation is available at: https://tophatter.readme.io/'
 
