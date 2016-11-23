@@ -107,7 +107,12 @@ TophatterMerchant::Order.retrieve(1035509247)
 TophatterMerchant::Order.fulfill(1035509247, carrier: 'USPS', tracking_number: '9400111899562173406594')
 ```
 
-#### Refund an order.
+#### Refund the shipping fee for an order.
 ```ruby
-TophatterMerchant::Order.refund(1035509249, type: 'full', reason: 'other')
+TophatterMerchant::Order.refund(1035509249, type: 'partial', reason: 'delay_in_shipping', fees: ['shipping_fee'])
+```
+
+#### Refund an order in full.
+```ruby
+TophatterMerchant::Order.refund(1035509249, type: 'full', reason: 'out_of_stock')
 ```
