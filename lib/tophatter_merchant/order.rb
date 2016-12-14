@@ -8,6 +8,7 @@ module TophatterMerchant
     attr_accessor :available_refunds, :refund_amount
     attr_accessor :disbursement_amount, :seller_fees_amount, :seller_fees
     attr_accessor :paid_at, :created_at
+    attr_accessor :ca_acknowledged
 
     class << self
 
