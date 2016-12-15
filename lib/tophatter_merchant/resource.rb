@@ -5,6 +5,14 @@ module TophatterMerchant
     include ActiveModel::Model
 
     def initialize(hash)
+      self.attributes = hash
+    end
+
+    def attributes
+      self.class.attributes
+    end
+
+    def attributes=(hash)
       # Only honor valid attributes.
       hash.each do |key, value|
         if respond_to?("#{key}=")
