@@ -20,5 +20,7 @@ rescue Errno::ENOENT
   puts "No .access_token file - you'll have to set TophatterMerchant.access_token manually from the console."
 end
 
+TophatterMerchant.logger.level = Logger::DEBUG
+
 Pry.config.color = false
 Pry.start

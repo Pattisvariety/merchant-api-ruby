@@ -1,16 +1,16 @@
 module TophatterMerchant
   class Product < Resource
-    attr_accessor :identifier
-    attr_accessor :category, :title, :description # Basics
-    attr_accessor :condition, :brand, :material # Facets
-    attr_accessor :available_quantity, :variations # Variations
-    attr_accessor :starting_bid, :buy_now_price, :retail_price, :cost_basis, :minimum_alerts_needed # Pricing
-    attr_accessor :shipping_origin, :shipping_price, :expedited_shipping_price, :days_to_fulfill, :days_to_deliver, :expedited_days_to_deliver, :weight # Shipping
-    attr_accessor :buy_one_get_one_price, :accessory_price, :accessory_description # Upsells
-    attr_accessor :primary_image, :extra_images, :all_images # Images
-    attr_accessor :slug, :ratings_average, :ratings_count # Ratings
-    attr_accessor :created_at, :updated_at, :disabled_at, :deleted_at # Timestamps
-    attr_accessor :blacklisted_at, :admin_hold_at, :slug, :internal_id # Other
+    attr_accessor :identifier,
+                  :category, :title, :description, # Basics
+                  :condition, :brand, :material, # Facets
+                  :available_quantity, :variations, # Variations
+                  :starting_bid, :buy_now_price, :retail_price, :cost_basis, :minimum_alerts_needed, # Pricing
+                  :shipping_origin, :shipping_price, :expedited_shipping_price, :days_to_fulfill, :days_to_deliver, :expedited_days_to_deliver, :weight, # Shipping
+                  :buy_one_get_one_price, :accessory_price, :accessory_description, # Upsells
+                  :primary_image, :extra_images, :all_images, # Images
+                  :slug, :ratings_average, :ratings_count, # Ratings
+                  :created_at, :updated_at, :disabled_at, :deleted_at, # Timestamps
+                  :blacklisted_at, :admin_hold_at, :slug, :internal_id # Other
 
     def id
       created_at.present? ? identifier : nil
@@ -26,15 +26,15 @@ module TophatterMerchant
     end
 
     def copy
-      attributes = to_h
+      hash = to_h
 
-      # Delete the attributes that shouldn't be copied.
-      %w(identifier primary_image extra_images all_images ratings_average ratings_count created_at updated_at disabled_at deleted_at blacklisted_at slug admin_hold_at).each do |attribute|
-        attributes.delete(attribute)
-        attributes['variations'].each { |variation| variation.delete(attribute) }
+      # Delete the keys that shouldn't be copied.
+      %w(identifier primary_image extra_images all_images ratings_average ratings_count created_at updated_at disabled_at deleted_at blacklisted_at slug admin_hold_at).each do |key|
+        hash.delete(key)
+        hash['variations'].each { |variation| variation.delete(key) }
       end
 
-      Product.new(attributes)
+      Product.new(hash)
     end
 
     def to_param

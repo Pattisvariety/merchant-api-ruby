@@ -1,13 +1,14 @@
 module TophatterMerchant
   class Order < Resource
-    attr_accessor :order_id, :status
-    attr_accessor :carrier, :tracking_number
-    attr_accessor :product_name, :product_identifier, :variation_identifier
-    attr_accessor :customer_name, :address1, :address2, :city, :state, :postal_code, :country
-    attr_accessor :available_refunds, :refund_amount
-    attr_accessor :disbursement_amount, :seller_fees_amount, :seller_fees
-    attr_accessor :paid_at, :created_at
-    attr_accessor :ca_acknowledged
+    attr_accessor :order_id, :status,
+                  :carrier, :tracking_number,
+                  :product_name, :product_identifier, :variation_identifier,
+                  :customer_id, :customer_name,
+                  :address1, :address2, :city, :state, :postal_code, :country,
+                  :available_refunds, :refund_amount,
+                  :disbursement_amount, :seller_fees_amount, :seller_fees,
+                  :paid_at, :created_at,
+                  :ca_acknowledged # @FIXME: This shouldn't be here.
 
     class << self
       # ap TophatterMerchant::Order.schema
