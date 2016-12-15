@@ -1,6 +1,5 @@
 module TophatterMerchant
   class Variation < Resource
-
     attr_accessor :identifier, :size, :color, :quantity, :created_at
 
     def id
@@ -8,7 +7,6 @@ module TophatterMerchant
     end
 
     class << self
-
       # ap TophatterMerchant::Variation.schema
       def schema
         get(url: "#{path}/schema.json")
@@ -34,8 +32,6 @@ module TophatterMerchant
       def path
         super + '/variations'
       end
-
     end
-
   end
 end

@@ -8,16 +8,17 @@ require 'pry'
 
 begin
   TophatterMerchant.api_path = File.read('.api_path').chomp
+  puts "TophatterMerchant.api_path: #{TophatterMerchant.api_path}"
 rescue Errno::ENOENT
+  puts "No .api_path file, using default: #{TophatterMerchant.api_path}"
 end
 
 begin
   TophatterMerchant.access_token = File.read('.access_token').chomp
+  puts "TophatterMerchant.access_token: #{TophatterMerchant.access_token}"
 rescue Errno::ENOENT
+  puts "No .access_token file - you'll have to set TophatterMerchant.access_token manually from the console."
 end
-
-puts "TophatterMerchant.api_path: #{TophatterMerchant.api_path}"
-puts "TophatterMerchant.access_token: #{TophatterMerchant.access_token}"
 
 Pry.config.color = false
 Pry.start

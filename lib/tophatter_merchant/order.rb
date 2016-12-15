@@ -1,6 +1,5 @@
 module TophatterMerchant
   class Order < Resource
-
     attr_accessor :order_id, :status
     attr_accessor :carrier, :tracking_number
     attr_accessor :product_name, :product_identifier, :variation_identifier
@@ -10,7 +9,6 @@ module TophatterMerchant
     attr_accessor :paid_at, :created_at
 
     class << self
-
       # ap TophatterMerchant::Order.schema
       def schema
         get(url: "#{path}/schema.json")
@@ -27,18 +25,12 @@ module TophatterMerchant
 
       # ap TophatterMerchant::Order.retrieve(681195262).to_h
       def retrieve(id)
-        Order.new get(url: "#{path}/retrieve.json", params: {
-          order_id: id
-        })
+        Order.new get(url: "#{path}/retrieve.json", params: { order_id: id })
       end
 
       # ap TophatterMerchant::Order.fulfill(417953232, carrier: 'other', tracking_number: 'ABC123').to_h
       def fulfill(id, carrier:, tracking_number:)
-        Order.new post(url: "#{path}/fulfill.json", params: {
-          order_id: id,
-          carrier: carrier,
-          tracking_number: tracking_number
-        })
+        Order.new post(url: "#{path}/fulfill.json", params: { order_id: id, carrier: carrier, tracking_number: tracking_number })
       end
 
       def unfulfill(id)
@@ -48,12 +40,7 @@ module TophatterMerchant
       # ap TophatterMerchant::Order.refund(417953232, type: 'full', reason: 'delay_in_shipping').to_h
       # ap TophatterMerchant::Order.refund(417953232, type: 'partial', reason: 'other', fees: ['shipping_fee']).to_h
       def refund(id, type:, reason:, fees: [])
-        Order.new post(url: "#{path}/refund.json", params: {
-          order_id: id,
-          type: type,
-          reason: reason,
-          fees: fees
-        })
+        Order.new post(url: "#{path}/refund.json", params: { order_id: id, type: type, reason: reason, fees: fees })
       end
 
       protected
@@ -61,7 +48,6 @@ module TophatterMerchant
       def path
         super + '/orders'
       end
-
     end
   end
 end

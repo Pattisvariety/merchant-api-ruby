@@ -2,6 +2,9 @@
 $LOAD_PATH.push File.expand_path('../lib', __FILE__)
 require 'tophatter_merchant/version'
 
+# To publish the next version:
+# gem build tophatter-merchant.gemspec
+# gem push tophatter-merchant-<version>.gem
 Gem::Specification.new do |s|
   s.name        = 'tophatter-merchant'
   s.version     = TophatterMerchant::VERSION

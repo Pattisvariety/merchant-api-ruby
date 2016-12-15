@@ -2,7 +2,6 @@ require 'active_model'
 
 module TophatterMerchant
   class Resource
-
     include ActiveModel::Model
 
     def self.attr_accessor(*vars)
@@ -31,20 +30,11 @@ module TophatterMerchant
       id.present?
     end
 
-    private
-
-    def self.attributes
-      @attributes || {}
-    end
-
-    def self.attributes!(*vars)
-      @attributes ||= {}
-      vars.map(&:to_s).each { |var| @attributes[var] = true }
-      @attributes
+    def log(message)
+      self.class.log(message)
     end
 
     class << self
-
       protected
 
       def get(url:, params: {})
@@ -64,20 +54,22 @@ module TophatterMerchant
       end
 
       def execute(request)
-        begin
-          puts "#{request.method.upcase} #{request.url} #{request.payload.inspect}"
-          response = request.execute
-          raise BadContentTypeException.new, "The server didn't return JSON. You probably made a bad request." if response.headers[:content_type] == 'text/html; charset=utf-8'
-          JSON.parse(response.body)
-        rescue RestClient::Request::Unauthorized => e
-          raise UnauthorizedException.new, parse_error(e, e.message)
-        rescue RestClient::BadRequest => e
-          raise BadRequestException.new, parse_error(e, e.message)
-        rescue RestClient::ResourceNotFound => e
-          raise NotFoundException.new, parse_error(e, 'The API path you requested does not exist.')
-        rescue RestClient::InternalServerError => e
-          raise ServerErrorException.new, parse_error(e, 'The server encountered an internal error. This is probably a bug, and you should contact support.')
-        end
+        log "#{request.method.upcase} #{request.url} #{request.payload.inspect}"
+        response = request.execute
+        raise BadContentTypeException.new, "The server didn't return JSON. You probably made a bad request." if response.headers[:content_type] == 'text/html; charset=utf-8'
+        JSON.parse(response.body)
+      rescue RestClient::Request::Unauthorized, RestClient::Forbidden => e
+        log "#{e.class.name}: #{e.response.code} -> raising UnauthorizedException"
+        raise UnauthorizedException.new, parse_error(e, e.message)
+      rescue RestClient::ResourceNotFound => e
+        log "#{e.class.name}: #{e.response.code} -> raising NotFoundException"
+        raise NotFoundException.new, parse_error(e, 'The API path you requested does not exist.')
+      rescue RestClient::BadRequest => e
+        log "#{e.class.name}: #{e.response.code} -> raising BadRequestException"
+        raise BadRequestException.new, parse_error(e, e.message)
+      rescue RestClient::InternalServerError => e
+        log "#{e.class.name}: #{e.response.code} -> raising ServerErrorException"
+        raise ServerErrorException.new, parse_error(e, 'The server encountered an internal error. This is probably a bug, and you should contact support.')
       end
 
       def request(method:, url:, params:)
@@ -96,15 +88,29 @@ module TophatterMerchant
 
       private
 
+      def attributes
+        @attributes || {}
+      end
+
+      def attributes!(*vars)
+        @attributes ||= {}
+        vars.map(&:to_s).each { |var| @attributes[var] = true }
+        @attributes
+      end
+
       def parse_error(exception, fallback)
         error = begin
           JSON.parse(exception.response)
         rescue
           {}
         end
-        raise BadRequestException.new, error['message'] || fallback
+
+        error['message'] || fallback
       end
 
+      def log(message)
+        puts message if TophatterMerchant.logging
+      end
     end
   end
 end

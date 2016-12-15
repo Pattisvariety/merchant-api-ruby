@@ -1,0 +1,32 @@
+AllCops:
+  TargetRubyVersion: 2.2
+
+# [Metrics]
+
+Metrics/LineLength:
+  Enabled: false
+Metrics/MethodLength:
+  Enabled: false
+Metrics/ParameterLists:
+  Enabled: false
+# Complexity metrics are difficult to understand and fix, so let's ignore them.
+Metrics/AbcSize:
+  Enabled: false
+
+# [Lint]
+
+# http://www.rubydoc.info/github/bbatsov/rubocop/Rubocop/Cop/Lint/EndAlignment
+Lint/EndAlignment:
+  Enabled: false
+
+# [Style]
+
+# http://www.rubydoc.info/github/bbatsov/rubocop/Rubocop/Cop/Style/Documentation
+Style/Documentation:
+  Enabled: false
+# http://www.rubydoc.info/gems/rubocop/RuboCop/Cop/Style/ElseAlignment
+Style/ElseAlignment:
+  Enabled: false
+# http://www.rubydoc.info/github/bbatsov/rubocop/Rubocop/Cop/Style/IndentationWidth
+Style/IndentationWidth:
+  Enabled: false

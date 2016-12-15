@@ -1,6 +1,5 @@
 module TophatterMerchant
   class Product < Resource
-
     attr_accessor :identifier
     attr_accessor :category, :title, :description # Basics
     attr_accessor :condition, :brand, :material # Facets
@@ -43,19 +42,13 @@ module TophatterMerchant
     end
 
     class << self
-
       # ap TophatterMerchant::Product.schema
       def schema
         get(url: "#{path}/schema.json")
       end
 
       def search(query:, page: 1, per_page: 50, pagination: nil)
-        result = get(url: "#{path}/search.json", params: {
-          query: query,
-          page: page,
-          per_page: per_page,
-          pagination: pagination
-        })
+        result = get(url: "#{path}/search.json", params: { query: query, page: page, per_page: per_page, pagination: pagination })
 
         if pagination.present?
           result['results'] = result['results'].map { |hash| Product.new(hash) }
@@ -68,14 +61,7 @@ module TophatterMerchant
 
       # ap TophatterMerchant::Product.all.map(&:to_h)
       def all(status: nil, category: nil, page: 1, per_page: 50, pagination: nil, sort: nil)
-        result = get(url: "#{path}.json", params: {
-          status: status,
-          category: category,
-          page: page,
-          per_page: per_page,
-          pagination: pagination,
-          sort: sort
-        })
+        result = get(url: "#{path}.json", params: { status: status, category: category, page: page, per_page: per_page, pagination: pagination, sort: sort })
 
         if pagination.present?
           result['results'] = result['results'].map { |hash| Product.new(hash) }
@@ -124,7 +110,6 @@ module TophatterMerchant
       def path
         super + '/products'
       end
-
     end
   end
 end

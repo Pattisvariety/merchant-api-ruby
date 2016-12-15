@@ -1,6 +1,5 @@
 module TophatterMerchant
   class Account < Resource
-
     attr_accessor :access_token, :first_name, :last_name, :store_name, :email, :country, :time_zone
 
     def id
@@ -8,7 +7,6 @@ module TophatterMerchant
     end
 
     class << self
-
       # ap TophatterMerchant::Account.schema
       def schema
         get(url: "#{path}/schema.json")
@@ -16,10 +14,7 @@ module TophatterMerchant
 
       # ap TophatterMerchant::Account.authenticate(email: 'megatron@autobot.com', password: 'ipipip').to_h
       def authenticate(email:, password:)
-        Account.new post(url: "#{path}/authenticate.json", params: {
-          email: email,
-          password: password
-        })
+        Account.new post(url: "#{path}/authenticate.json", params: { email: email, password: password })
       end
 
       # ap TophatterMerchant::Account.me.to_h
@@ -47,7 +42,6 @@ module TophatterMerchant
       def path
         super + '/account'
       end
-
     end
   end
 end

@@ -1,7 +1,6 @@
 module TophatterMerchant
   class Metadata < Resource
     class << self
-
       # ap TophatterMerchant::Metadata.all
       def all
         get(url: "#{path}.json")
@@ -70,7 +69,6 @@ module TophatterMerchant
       def path
         super + '/metadata'
       end
-
     end
   end
 end

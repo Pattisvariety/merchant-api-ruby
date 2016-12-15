@@ -2,7 +2,6 @@ require 'spec_helper'
 
 # rspec spec/tophatter_merchant/metadata_spec.rb
 describe TophatterMerchant::Metadata do
-
   it 'returns metadata' do
     metadata = TophatterMerchant::Metadata.all
     expect(metadata.keys.include?('categories')).to be true
@@ -34,5 +33,4 @@ describe TophatterMerchant::Metadata do
     expect(gemstones['Gemstones'].include?('Ruby')).to be true
     expect(gemstones['Gemstones'].include?("Micheal Jackson's Hair Diamond")).to be false
   end
-
 end

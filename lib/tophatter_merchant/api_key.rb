@@ -1,10 +1,8 @@
 module TophatterMerchant
   class ApiKey < Resource
-
     attr_accessor :id, :access_token, :created_at
 
     class << self
-
       # ap TophatterMerchant::ApiKey.schema
       def schema
         get(url: "#{path}/schema.json")
@@ -39,7 +37,6 @@ module TophatterMerchant
       def path
         super + '/api_keys'
       end
-
     end
   end
 end

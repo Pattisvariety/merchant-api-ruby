@@ -1,10 +1,8 @@
 module TophatterMerchant
   class Image < Resource
-
     attr_accessor :id, :fingerprint, :url
 
     class << self
-
       # request = RestClient::Request.new(method: :get, url: 'https://img0.etsystatic.com/101/0/7856452/il_fullxfull.882030160_r0tn.jpg')
       # response = request.execute
       # File.open('/tmp/foo.jpg', 'w') { |file| file.write(response.body) }
@@ -18,7 +16,6 @@ module TophatterMerchant
       def path
         super + '/images'
       end
-
     end
   end
 end

@@ -6,7 +6,6 @@ WebMock.disable_net_connect!(allow_localhost: true)
 
 # http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
-
   config.expect_with :rspec do |expectations|
     expectations.include_chain_clauses_in_custom_matcher_descriptions = true
   end
@@ -20,5 +19,4 @@ RSpec.configure do |config|
     stub_request(:get, /.*conditions\.json/).to_return(File.new(File.dirname(__FILE__) + '/../tmp/stubs/metadata/conditions.json'))
     stub_request(:get, /.*gemstones\.json/).to_return(File.new(File.dirname(__FILE__) + '/../tmp/stubs/metadata/gemstones.json'))
   end
-
 end
