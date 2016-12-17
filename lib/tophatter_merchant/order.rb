@@ -7,8 +7,7 @@ module TophatterMerchant
                   :address1, :address2, :city, :state, :postal_code, :country,
                   :available_refunds, :refund_amount,
                   :disbursement_amount, :seller_fees_amount, :seller_fees,
-                  :paid_at, :created_at,
-                  :ca_acknowledged # @FIXME: This shouldn't be here.
+                  :paid_at, :created_at
 
     class << self
       # ap TophatterMerchant::Order.schema
