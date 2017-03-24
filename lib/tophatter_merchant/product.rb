@@ -4,7 +4,7 @@ module TophatterMerchant
                   :category, :title, :description, # Basics
                   :condition, :brand, :material, # Facets
                   :available_quantity, :variations, # Variations
-                  :starting_bid, :buy_now_price, :retail_price, :cost_basis, :minimum_alerts_needed, # Pricing
+                  :starting_bid, :buy_now_price, :retail_price, :cost_basis, :success_fee_bid, :minimum_alerts_needed, # Pricing
                   :shipping_origin, :shipping_price, :expedited_shipping_price, :days_to_fulfill, :days_to_deliver, :expedited_days_to_deliver, :weight, # Shipping
                   :buy_one_get_one_price, :accessory_price, :accessory_description, # Upsells
                   :primary_image, :extra_images, :all_images, # Images

@@ -52,6 +52,7 @@ TophatterMerchant::Product.create(
   buy_now_price: 150,
   cost_basis: 75,
   shipping_price: 5.0,
+  success_fee_bid: 0.5,
   shipping_origin: 'United States',
   weight: 6,
   days_to_fulfill: 3,
