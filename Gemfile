@@ -4,7 +4,9 @@ gemspec
 group :development, :test do
   gem 'awesome_print'
   gem 'pry'
+  gem 'rake'
   gem 'rspec'
+  gem 'rubocop'
   gem 'vcr'
   gem 'webmock'
 end

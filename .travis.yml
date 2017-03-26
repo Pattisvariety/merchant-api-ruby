@@ -1,0 +1,10 @@
+language: ruby
+rvm:
+ - 2.2
+branches:
+  only:
+    - master
+cache: bundler
+script:
+  - bundle exec rake rubocop
+  - bundle exec rspec
