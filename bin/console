@@ -22,5 +22,5 @@ end
 
 TophatterMerchant.logger.level = Logger::DEBUG
 
-Pry.config.color = false
+AwesomePrint.pry!
 Pry.start

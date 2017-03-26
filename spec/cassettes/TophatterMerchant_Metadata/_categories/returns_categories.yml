@@ -1,0 +1,97 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://tophatter.com/merchant_api/v1/metadata/categories.json
+    body:
+      encoding: ASCII-8BIT
+      string: ''
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 25 Mar 2017 22:19:51 GMT
+      Etag:
+      - W/"1fc46ae442e0793ca4f38061b1ba908a"
+      Server:
+      - nginx + Phusion Passenger
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger Enterprise
+      X-Request-Id:
+      - 0c66d582-5e55-4f14-b839-1f9cad59c673
+      X-Request-Start:
+      - t=1490480391.785
+      X-Runtime:
+      - '0.013347'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        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
+        AEjeaFaTGQAA
+    http_version: 
+  recorded_at: Sat, 25 Mar 2017 22:19:51 GMT
+recorded_with: VCR 3.0.3

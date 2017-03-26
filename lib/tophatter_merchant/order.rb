@@ -9,6 +9,10 @@ module TophatterMerchant
                   :disbursement_amount, :seller_fees_amount, :seller_fees,
                   :paid_at, :created_at
 
+    def id
+      created_at.present? ? identifier : nil
+    end
+
     class << self
       # ap TophatterMerchant::Order.schema
       def schema
@@ -32,10 +36,6 @@ module TophatterMerchant
       # ap TophatterMerchant::Order.fulfill(417953232, carrier: 'other', tracking_number: 'ABC123').to_h
       def fulfill(id, carrier:, tracking_number:)
         Order.new post(url: "#{path}/fulfill.json", params: { order_id: id, carrier: carrier, tracking_number: tracking_number })
-      end
-
-      def unfulfill(id)
-        post(url: "#{path}/#{id}/unfulfill.json")
       end
 
       # ap TophatterMerchant::Order.refund(417953232, type: 'full', reason: 'delay_in_shipping').to_h

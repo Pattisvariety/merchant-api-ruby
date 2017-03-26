@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://tophatter.dev/merchant_api/v1/products.json
+    body:
+      encoding: UTF-8
+      string: status=&category=&page=1&per_page=5&pagination=&sort=&access_token=293da6763df7cb3b894a1831addcb52d
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Length:
+      - '99'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"6ef8bbc3e687134c71bb1c0069b63ed9"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - cf775ca6-719f-46cf-97be-7f985eb864dc
+      X-Runtime:
+      - '0.053070'
+      Date:
+      - Sat, 25 Mar 2017 22:19:56 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '[{"identifier":"PFTBNU5","category":"Apparel | Tops | Shirts","title":"Pay
+        Flow Test, With Shipping Price","description":"This is the lot description.","condition":"New","brand":"Foo","material":null,"available_quantity":100,"variations":[{"identifier":"PFTBNU5","size":null,"color":null,"quantity":100,"created_at":"2017-03-25T15:17:23-07:00"}],"starting_bid":18,"buy_now_price":399,"retail_price":1099,"cost_basis":"300.0","minimum_alerts_needed":0,"success_fee_bid":null,"shipping_price":13,"shipping_origin":"United
+        States","weight":6,"days_to_fulfill":4,"days_to_deliver":4,"expedited_shipping_price":23,"expedited_days_to_deliver":1,"buy_one_get_one_price":50,"accessory_price":25,"accessory_description":"This
+        is a super awesome accessory.","primary_image":"https://d38eepresuu519.cloudfront.net/0127b02033b5ec927eef961f74688d5d/original.jpg","extra_images":"https://d38eepresuu519.cloudfront.net/60ded7eee5b92cdaffa13dd1ee5c0305/original.jpg","all_images":[{"thumbnail":"https://d38eepresuu519.cloudfront.net/0127b02033b5ec927eef961f74688d5d/thumbnail.jpg","square":"https://d38eepresuu519.cloudfront.net/0127b02033b5ec927eef961f74688d5d/square.jpg","medium":"https://d38eepresuu519.cloudfront.net/0127b02033b5ec927eef961f74688d5d/medium.jpg","large":"https://d38eepresuu519.cloudfront.net/0127b02033b5ec927eef961f74688d5d/large.jpg","original":"https://d38eepresuu519.cloudfront.net/0127b02033b5ec927eef961f74688d5d/original.jpg"},{"thumbnail":"https://d38eepresuu519.cloudfront.net/60ded7eee5b92cdaffa13dd1ee5c0305/thumbnail.jpg","square":"https://d38eepresuu519.cloudfront.net/60ded7eee5b92cdaffa13dd1ee5c0305/square.jpg","medium":"https://d38eepresuu519.cloudfront.net/60ded7eee5b92cdaffa13dd1ee5c0305/medium.jpg","large":"https://d38eepresuu519.cloudfront.net/60ded7eee5b92cdaffa13dd1ee5c0305/large.jpg","original":"https://d38eepresuu519.cloudfront.net/60ded7eee5b92cdaffa13dd1ee5c0305/original.jpg"}],"ratings_count":null,"ratings_average":null,"created_at":"2017-03-25T15:17:23-07:00","updated_at":"2017-03-25T15:17:23-07:00","disabled_at":null,"deleted_at":null,"blacklisted_at":null,"admin_hold_at":null,"slug":"PFTBNU5","internal_id":992996129},{"identifier":"C
+        T.3","category":"Apparel | Tops | Shirts","title":"Cute Top 3 - Sizes & Colors","description":"This
+        is a cute top.","condition":"New","brand":null,"material":null,"available_quantity":39,"variations":[{"identifier":"CT3-S-BLUE","size":"S","color":"Blue","quantity":10,"created_at":"2017-03-25T15:17:23-07:00"},{"identifier":"CT3-S-PINK","size":"S","color":"Pink","quantity":10,"created_at":"2017-03-25T15:17:23-07:00"},{"identifier":"CT3-M-BLUE","size":"M","color":"Blue","quantity":10,"created_at":"2017-03-25T15:17:23-07:00"},{"identifier":"CT3-M-PINK","size":"M","color":"Pink","quantity":10,"created_at":"2017-03-25T15:17:23-07:00"}],"starting_bid":1,"buy_now_price":10,"retail_price":15,"cost_basis":null,"minimum_alerts_needed":0,"success_fee_bid":null,"shipping_price":5,"shipping_origin":"Canada","weight":null,"days_to_fulfill":5,"days_to_deliver":10,"expedited_shipping_price":null,"expedited_days_to_deliver":null,"buy_one_get_one_price":null,"accessory_price":null,"accessory_description":null,"primary_image":"https://d38eepresuu519.cloudfront.net/56a63fd91ba79ff0abb7fe35b86db375/original.jpg","extra_images":"https://d38eepresuu519.cloudfront.net/10633836e10239001fa830ab6f36071a/original.jpg","all_images":[{"thumbnail":"https://d38eepresuu519.cloudfront.net/56a63fd91ba79ff0abb7fe35b86db375/thumbnail.jpg","square":"https://d38eepresuu519.cloudfront.net/56a63fd91ba79ff0abb7fe35b86db375/square.jpg","medium":"https://d38eepresuu519.cloudfront.net/56a63fd91ba79ff0abb7fe35b86db375/medium.jpg","large":"https://d38eepresuu519.cloudfront.net/56a63fd91ba79ff0abb7fe35b86db375/large.jpg","original":"https://d38eepresuu519.cloudfront.net/56a63fd91ba79ff0abb7fe35b86db375/original.jpg"},{"thumbnail":"https://d38eepresuu519.cloudfront.net/10633836e10239001fa830ab6f36071a/thumbnail.jpg","square":"https://d38eepresuu519.cloudfront.net/10633836e10239001fa830ab6f36071a/square.jpg","medium":"https://d38eepresuu519.cloudfront.net/10633836e10239001fa830ab6f36071a/medium.jpg","large":"https://d38eepresuu519.cloudfront.net/10633836e10239001fa830ab6f36071a/large.jpg","original":"https://d38eepresuu519.cloudfront.net/10633836e10239001fa830ab6f36071a/original.jpg"}],"ratings_count":null,"ratings_average":null,"created_at":"2017-03-25T15:17:23-07:00","updated_at":"2017-03-25T15:17:24-07:00","disabled_at":null,"deleted_at":null,"blacklisted_at":null,"admin_hold_at":null,"slug":"C:T~3","internal_id":623229114},{"identifier":"PFTBNU3","category":"Apparel
+        | Tops | Shirts","title":"Pay Flow Test, Buy Now Canada","description":"This
+        is the lot description.","condition":"New","brand":"Foo","material":null,"available_quantity":100,"variations":[{"identifier":"PFTBNU3","size":null,"color":null,"quantity":100,"created_at":"2017-03-25T15:17:23-07:00"}],"starting_bid":18,"buy_now_price":399,"retail_price":1099,"cost_basis":"300.0","minimum_alerts_needed":0,"success_fee_bid":null,"shipping_price":5,"shipping_origin":"United
+        States","weight":6,"days_to_fulfill":4,"days_to_deliver":4,"expedited_shipping_price":null,"expedited_days_to_deliver":null,"buy_one_get_one_price":null,"accessory_price":null,"accessory_description":null,"primary_image":"https://d38eepresuu519.cloudfront.net/0127b02033b5ec927eef961f74688d5d/original.jpg","extra_images":"https://d38eepresuu519.cloudfront.net/60ded7eee5b92cdaffa13dd1ee5c0305/original.jpg","all_images":[{"thumbnail":"https://d38eepresuu519.cloudfront.net/0127b02033b5ec927eef961f74688d5d/thumbnail.jpg","square":"https://d38eepresuu519.cloudfront.net/0127b02033b5ec927eef961f74688d5d/square.jpg","medium":"https://d38eepresuu519.cloudfront.net/0127b02033b5ec927eef961f74688d5d/medium.jpg","large":"https://d38eepresuu519.cloudfront.net/0127b02033b5ec927eef961f74688d5d/large.jpg","original":"https://d38eepresuu519.cloudfront.net/0127b02033b5ec927eef961f74688d5d/original.jpg"},{"thumbnail":"https://d38eepresuu519.cloudfront.net/60ded7eee5b92cdaffa13dd1ee5c0305/thumbnail.jpg","square":"https://d38eepresuu519.cloudfront.net/60ded7eee5b92cdaffa13dd1ee5c0305/square.jpg","medium":"https://d38eepresuu519.cloudfront.net/60ded7eee5b92cdaffa13dd1ee5c0305/medium.jpg","large":"https://d38eepresuu519.cloudfront.net/60ded7eee5b92cdaffa13dd1ee5c0305/large.jpg","original":"https://d38eepresuu519.cloudfront.net/60ded7eee5b92cdaffa13dd1ee5c0305/original.jpg"}],"ratings_count":null,"ratings_average":null,"created_at":"2017-03-25T15:17:23-07:00","updated_at":"2017-03-25T15:17:23-07:00","disabled_at":null,"deleted_at":null,"blacklisted_at":null,"admin_hold_at":null,"slug":"PFTBNU3","internal_id":491790261},{"identifier":"PFTBNU2","category":"Apparel
+        | Tops | Shirts","title":"Pay Flow Test, Buy Now With Expedited Shipping","description":"This
+        is the lot description.","condition":"New","brand":"Foo","material":null,"available_quantity":100,"variations":[{"identifier":"PFTBNU2","size":null,"color":null,"quantity":100,"created_at":"2017-03-25T15:17:23-07:00"}],"starting_bid":18,"buy_now_price":399,"retail_price":1099,"cost_basis":"300.0","minimum_alerts_needed":0,"success_fee_bid":null,"shipping_price":0,"shipping_origin":"United
+        States","weight":6,"days_to_fulfill":4,"days_to_deliver":4,"expedited_shipping_price":5,"expedited_days_to_deliver":1,"buy_one_get_one_price":null,"accessory_price":null,"accessory_description":null,"primary_image":"https://d38eepresuu519.cloudfront.net/60ded7eee5b92cdaffa13dd1ee5c0305/original.jpg","extra_images":"https://d38eepresuu519.cloudfront.net/0127b02033b5ec927eef961f74688d5d/original.jpg","all_images":[{"thumbnail":"https://d38eepresuu519.cloudfront.net/60ded7eee5b92cdaffa13dd1ee5c0305/thumbnail.jpg","square":"https://d38eepresuu519.cloudfront.net/60ded7eee5b92cdaffa13dd1ee5c0305/square.jpg","medium":"https://d38eepresuu519.cloudfront.net/60ded7eee5b92cdaffa13dd1ee5c0305/medium.jpg","large":"https://d38eepresuu519.cloudfront.net/60ded7eee5b92cdaffa13dd1ee5c0305/large.jpg","original":"https://d38eepresuu519.cloudfront.net/60ded7eee5b92cdaffa13dd1ee5c0305/original.jpg"},{"thumbnail":"https://d38eepresuu519.cloudfront.net/0127b02033b5ec927eef961f74688d5d/thumbnail.jpg","square":"https://d38eepresuu519.cloudfront.net/0127b02033b5ec927eef961f74688d5d/square.jpg","medium":"https://d38eepresuu519.cloudfront.net/0127b02033b5ec927eef961f74688d5d/medium.jpg","large":"https://d38eepresuu519.cloudfront.net/0127b02033b5ec927eef961f74688d5d/large.jpg","original":"https://d38eepresuu519.cloudfront.net/0127b02033b5ec927eef961f74688d5d/original.jpg"}],"ratings_count":null,"ratings_average":null,"created_at":"2017-03-25T15:17:23-07:00","updated_at":"2017-03-25T15:17:23-07:00","disabled_at":null,"deleted_at":null,"blacklisted_at":null,"admin_hold_at":null,"slug":"PFTBNU2","internal_id":482541585},{"identifier":"PFTBNU4","category":"Apparel
+        | Tops | Shirts","title":"Pay Flow Test, Buy Now, Scheduled Lot","description":"This
+        is the lot description.","condition":"New","brand":"Foo","material":null,"available_quantity":100,"variations":[{"identifier":"PFTBNU4","size":null,"color":null,"quantity":100,"created_at":"2017-03-25T15:17:23-07:00"}],"starting_bid":18,"buy_now_price":399,"retail_price":1099,"cost_basis":"300.0","minimum_alerts_needed":0,"success_fee_bid":null,"shipping_price":5,"shipping_origin":"United
+        States","weight":6,"days_to_fulfill":4,"days_to_deliver":4,"expedited_shipping_price":null,"expedited_days_to_deliver":null,"buy_one_get_one_price":null,"accessory_price":null,"accessory_description":null,"primary_image":"https://d38eepresuu519.cloudfront.net/60ded7eee5b92cdaffa13dd1ee5c0305/original.jpg","extra_images":"https://d38eepresuu519.cloudfront.net/0127b02033b5ec927eef961f74688d5d/original.jpg","all_images":[{"thumbnail":"https://d38eepresuu519.cloudfront.net/60ded7eee5b92cdaffa13dd1ee5c0305/thumbnail.jpg","square":"https://d38eepresuu519.cloudfront.net/60ded7eee5b92cdaffa13dd1ee5c0305/square.jpg","medium":"https://d38eepresuu519.cloudfront.net/60ded7eee5b92cdaffa13dd1ee5c0305/medium.jpg","large":"https://d38eepresuu519.cloudfront.net/60ded7eee5b92cdaffa13dd1ee5c0305/large.jpg","original":"https://d38eepresuu519.cloudfront.net/60ded7eee5b92cdaffa13dd1ee5c0305/original.jpg"},{"thumbnail":"https://d38eepresuu519.cloudfront.net/0127b02033b5ec927eef961f74688d5d/thumbnail.jpg","square":"https://d38eepresuu519.cloudfront.net/0127b02033b5ec927eef961f74688d5d/square.jpg","medium":"https://d38eepresuu519.cloudfront.net/0127b02033b5ec927eef961f74688d5d/medium.jpg","large":"https://d38eepresuu519.cloudfront.net/0127b02033b5ec927eef961f74688d5d/large.jpg","original":"https://d38eepresuu519.cloudfront.net/0127b02033b5ec927eef961f74688d5d/original.jpg"}],"ratings_count":null,"ratings_average":null,"created_at":"2017-03-25T15:17:23-07:00","updated_at":"2017-03-25T15:17:23-07:00","disabled_at":null,"deleted_at":null,"blacklisted_at":null,"admin_hold_at":null,"slug":"PFTBNU4","internal_id":413333653}]'
+    http_version: 
+  recorded_at: Sat, 25 Mar 2017 22:19:56 GMT
+recorded_with: VCR 3.0.3

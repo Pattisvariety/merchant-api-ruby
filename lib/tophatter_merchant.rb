@@ -1,4 +1,5 @@
 require 'active_model'
+require 'json'
 
 module TophatterMerchant
   class << self
@@ -20,13 +21,9 @@ module TophatterMerchant
 end
 
 require File.dirname(__FILE__) + '/tophatter_merchant/version'
-require File.dirname(__FILE__) + '/tophatter_merchant/exceptions'
 
 # Resources:
 require File.dirname(__FILE__) + '/tophatter_merchant/resource'
-require File.dirname(__FILE__) + '/tophatter_merchant/account'
-require File.dirname(__FILE__) + '/tophatter_merchant/api_key'
-require File.dirname(__FILE__) + '/tophatter_merchant/image'
 require File.dirname(__FILE__) + '/tophatter_merchant/metadata'
 require File.dirname(__FILE__) + '/tophatter_merchant/order'
 require File.dirname(__FILE__) + '/tophatter_merchant/product'

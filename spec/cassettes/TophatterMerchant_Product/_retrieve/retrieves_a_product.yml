@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://tophatter.dev/merchant_api/v1/products/retrieve.json
+    body:
+      encoding: UTF-8
+      string: identifier=PFTBNU5&access_token=293da6763df7cb3b894a1831addcb52d
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Length:
+      - '64'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"6787c2c8ae064e4583cc4a877055a884"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 10d43727-3d3c-4506-aae2-7771c2305d3b
+      X-Runtime:
+      - '0.037609'
+      Date:
+      - Sat, 25 Mar 2017 22:19:56 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"identifier":"PFTBNU5","category":"Apparel | Tops | Shirts","title":"Pay
+        Flow Test, With Shipping Price","description":"This is the lot description.","condition":"New","brand":"Foo","material":null,"available_quantity":100,"variations":[{"identifier":"PFTBNU5","size":null,"color":null,"quantity":100,"created_at":"2017-03-25T15:17:23-07:00"}],"starting_bid":18,"buy_now_price":399,"retail_price":1099,"cost_basis":"300.0","minimum_alerts_needed":0,"success_fee_bid":null,"shipping_price":13,"shipping_origin":"United
+        States","weight":6,"days_to_fulfill":4,"days_to_deliver":4,"expedited_shipping_price":23,"expedited_days_to_deliver":1,"buy_one_get_one_price":50,"accessory_price":25,"accessory_description":"This
+        is a super awesome accessory.","primary_image":"https://d38eepresuu519.cloudfront.net/0127b02033b5ec927eef961f74688d5d/original.jpg","extra_images":"https://d38eepresuu519.cloudfront.net/60ded7eee5b92cdaffa13dd1ee5c0305/original.jpg","all_images":[{"thumbnail":"https://d38eepresuu519.cloudfront.net/0127b02033b5ec927eef961f74688d5d/thumbnail.jpg","square":"https://d38eepresuu519.cloudfront.net/0127b02033b5ec927eef961f74688d5d/square.jpg","medium":"https://d38eepresuu519.cloudfront.net/0127b02033b5ec927eef961f74688d5d/medium.jpg","large":"https://d38eepresuu519.cloudfront.net/0127b02033b5ec927eef961f74688d5d/large.jpg","original":"https://d38eepresuu519.cloudfront.net/0127b02033b5ec927eef961f74688d5d/original.jpg"},{"thumbnail":"https://d38eepresuu519.cloudfront.net/60ded7eee5b92cdaffa13dd1ee5c0305/thumbnail.jpg","square":"https://d38eepresuu519.cloudfront.net/60ded7eee5b92cdaffa13dd1ee5c0305/square.jpg","medium":"https://d38eepresuu519.cloudfront.net/60ded7eee5b92cdaffa13dd1ee5c0305/medium.jpg","large":"https://d38eepresuu519.cloudfront.net/60ded7eee5b92cdaffa13dd1ee5c0305/large.jpg","original":"https://d38eepresuu519.cloudfront.net/60ded7eee5b92cdaffa13dd1ee5c0305/original.jpg"}],"ratings_count":null,"ratings_average":null,"created_at":"2017-03-25T15:17:23-07:00","updated_at":"2017-03-25T15:17:23-07:00","disabled_at":null,"deleted_at":null,"blacklisted_at":null,"admin_hold_at":null,"slug":"PFTBNU5","internal_id":992996129}'
+    http_version: 
+  recorded_at: Sat, 25 Mar 2017 22:19:56 GMT
+recorded_with: VCR 3.0.3

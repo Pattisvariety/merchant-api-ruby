@@ -1,0 +1,68 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://tophatter.com/merchant_api/v1/metadata/territories.json
+    body:
+      encoding: ASCII-8BIT
+      string: ''
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 25 Mar 2017 22:19:56 GMT
+      Etag:
+      - W/"f40bc133c742ae36ce6e734ba319a0c0"
+      Server:
+      - nginx + Phusion Passenger
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger Enterprise
+      X-Request-Id:
+      - 4d5ee40a-068d-4459-b003-c6c6d6a2e5a3
+      X-Request-Start:
+      - t=1490480396.165
+      X-Runtime:
+      - '0.002481'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '154'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA1TNwQoCMQwE0F8pOfsF3kq9CFJYWrbnoIEt1FbSLCLiv5uu
+        IHqcBzPzBLt2YSwZq3F4y4LFRGLO0vgBe7Auwg483U1oqywmYaGu7kMa3lgW
+        4vpX8aMxrUS1F6wXlel0UPoMfP/Ug1WO2K9YtxxtUJjzWZc2mI9OIVGXcfJb
+        TRZebwAAAP//AwDsikfevQAAAA==
+    http_version: 
+  recorded_at: Sat, 25 Mar 2017 22:19:55 GMT
+recorded_with: VCR 3.0.3

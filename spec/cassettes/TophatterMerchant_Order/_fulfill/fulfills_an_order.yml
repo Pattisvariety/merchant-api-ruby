@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://tophatter.dev/merchant_api/v1/orders/fulfill.json
+    body:
+      encoding: UTF-8
+      string: order_id=359887509&carrier=USPS&tracking_number=CX263292019US&access_token=293da6763df7cb3b894a1831addcb52d
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Length:
+      - '107'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"8800c06c6bd0c8549d58c2201f4c54f5"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 60850788-fcbb-4c13-b5b4-771f0169ee7d
+      X-Runtime:
+      - '0.534084'
+      Date:
+      - Sat, 25 Mar 2017 23:09:22 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"order_id":359887509,"status":"shipped","carrier":"usps","tracking_number":"CX263292019US","product_name":"Paid
+        RIPE, Not Shipped","product_identifier":"DEFAULT","variation_identifier":null,"customer_name":"Optimus
+        Prime","customer_id":981984628,"address1":"201 Valley Street","address2":null,"city":"Los
+        Altos","state":"CA","postal_code":"94022","country":"United States","available_refunds":{"buyer_fee":399.0},"refund_amount":0.0,"disbursement_amount":358.8,"seller_fees_amount":40.2,"seller_fees":[{"type":"commission_fee","amount":40.2}],"paid_at":"2017-03-25T14:06:54-07:00","created_at":"2017-03-25T16:07:55-07:00"}'
+    http_version: 
+  recorded_at: Sat, 25 Mar 2017 23:09:22 GMT
+recorded_with: VCR 3.0.3

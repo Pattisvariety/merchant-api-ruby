@@ -1,6 +1,8 @@
 module TophatterMerchant
   class Variation < Resource
-    attr_accessor :identifier, :size, :color, :quantity, :created_at
+    attr_accessor :product_identifier, :identifier,
+                  :size, :color, :quantity,
+                  :created_at, :disabled_at, :deleted_at
 
     def id
       created_at.present? ? identifier : nil

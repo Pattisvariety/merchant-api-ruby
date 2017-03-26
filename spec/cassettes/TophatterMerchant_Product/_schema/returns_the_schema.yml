@@ -1,0 +1,124 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://tophatter.dev/merchant_api/v1/products/schema.json
+    body:
+      encoding: UTF-8
+      string: access_token=293da6763df7cb3b894a1831addcb52d
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Length:
+      - '45'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"d30532b5aa5255482defc6602f9682b4"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - aba8f939-841a-4be0-9ebb-575224046511
+      X-Runtime:
+      - '0.018778'
+      Date:
+      - Sat, 25 Mar 2017 22:19:55 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '[{"field":"identifier","name":"Unique ID","required":true,"readonly":false,"description":"The
+        unique identifier or SKU that your system uses to recognize this product.
+        Only letters, numbers, spaces, dashes and underscores are allowed."},{"field":"category","name":"Category","required":true,"readonly":false,"description":"The
+        category of the product. The list of valid categories can be found [here](doc:categories)."},{"field":"title","name":"Title","required":true,"readonly":false,"description":"The
+        name of the product."},{"field":"description","name":"Description","required":true,"readonly":false,"description":"The
+        description of the product. Should not contain HTML. Newlines are okay."},{"field":"condition","name":"Condition","required":true,"readonly":false,"description":"The
+        condition of the product. The list of valid conditions can be found [here](doc:conditions)."},{"field":"brand","name":"Brand","required":false,"readonly":false,"description":"The
+        brand of the product (if any). The list of valid brands can be found [here](doc:brands)."},{"field":"material","name":"Material","required":false,"readonly":false,"description":"The
+        material the product consists of. The list of recommended materials can be
+        found [here](doc:materials)."},{"field":"available_quantity","name":"Available
+        Quantity","required":false,"readonly":true,"description":"The sum of quantity
+        for each variation minus the number of items which have been won and are awaiting
+        payment."},{"field":"variations","name":"Variations","required":true,"readonly":false,"description":"A
+        hash of product variations, keyed by the unique identifier of each variation.
+        A product variation consists of a unique id, size, color, and quantity. Both
+        size and color are optional. When specifying a size or color please refer
+        to the list of recommended [sizes](doc:size) and [color](doc:colors)."},{"field":"starting_bid","name":"Starting
+        Bid","required":false,"readonly":false,"description":"The starting price of
+        a product when it is sold in an auction. All new products must start at $1."},{"field":"buy_now_price","name":"Buy
+        Now Price","required":true,"readonly":false,"description":"The price of the
+        product when a user purchases one via the \"Buy Now\" option."},{"field":"retail_price","name":"Retail
+        Price","required":false,"readonly":false,"description":"The Manufacturer''s
+        Suggested Retail Price. This field is recommended as it will show as a strikethrough
+        price and appears next to the selling price for the product."},{"field":"cost_basis","name":"Cost
+        Basis","required":false,"readonly":false,"description":"The original cost
+        (to you) of a product. Specifying it will allow you to easily see your profits."},{"field":"success_fee_bid","name":"Success
+        Fee Bid","required":false,"readonly":false,"description":"The Success Fee
+        Bid for this product."},{"field":"shipping_price","name":"Shipping Price","required":true,"readonly":false,"description":"The
+        shipping price of the product when someone in the US purchases one. This price
+        determines the shipping price to other countries when you set up your [shipping
+        rates](https://tophatter.com/sellers/shipping_rates)."},{"field":"shipping_origin","name":"Shipping
+        Origin","required":true,"readonly":false,"description":"The country the product
+        ships from."},{"field":"weight","name":"Shipping Weight In Ounces","required":false,"readonly":false,"description":"The
+        weight (in ounces) of the package when you ship this item. Used to help determine
+        shipping costs in certain scenarios."},{"field":"days_to_fulfill","name":"Days
+        To Process Order","required":true,"readonly":false,"description":"The number
+        of days (after purchase) that it will take you to process & fulfill the order
+        by shipping the item."},{"field":"days_to_deliver","name":"Days To Deliver","required":true,"readonly":false,"description":"The
+        number of days you expect the shipment to be in transit to the buyer. Do not
+        include the number of days it will take to fulfill the order."},{"field":"expedited_shipping_price","name":"Expedited
+        Shipping Price","required":false,"readonly":false,"description":"The shipping
+        price of the product when someone in the US purchases one and chooses expedited
+        shipping."},{"field":"expedited_days_to_deliver","name":"Expedited Delivery
+        Time","required":false,"readonly":false,"description":"The number of days
+        you expect the shipment to be in transit to the buyer when the buyer chooses
+        expedited shipping."},{"field":"buy_one_get_one_price","name":"Buy One Get
+        One Price","required":false,"readonly":false,"description":"Offer \"Buy One
+        Get One\" for $XX (should include any additional shipping cost)."},{"field":"accessory_price","name":"Accessory
+        Price","required":false,"readonly":false,"description":"Offer an accessory
+        for $XX."},{"field":"accessory_description","name":"Accessory Description","required":false,"readonly":false,"description":"Description
+        of the accessory."},{"field":"primary_image","name":"Primary Image","required":true,"readonly":false,"description":"URL
+        of a photo of your product. Link directly to the image, not the page where
+        it is located. We accept JPEG, PNG or GIF format. Images should be at least
+        500x480 pixels in size."},{"field":"extra_images","name":"Extra Images","required":true,"readonly":false,"description":"URLs
+        of extra photos of your product. Link directly to the image, not the page
+        where it is located. Same rules apply as primary_image. At least one extra
+        image is required. You can specify multiple URLs separated by the character
+        \"|\". Example: http://imgur.com/foo|http://imgur.com/bar"},{"field":"all_images","name":"All
+        Images","required":false,"readonly":true,"description":"All images in all
+        available sizes (large, thumbnail, etc.)"},{"field":"ratings_average","name":"Ratings
+        Average","required":false,"readonly":true,"description":"For internal use."},{"field":"ratings_count","name":"Ratings
+        Count","required":false,"readonly":true,"description":"For internal use."},{"field":"created_at","name":"Created
+        At","required":false,"readonly":true,"description":"The date and time the
+        product was created."},{"field":"updated_at","name":"Updated At","required":false,"readonly":true,"description":"The
+        date and time the product was last updated."},{"field":"disabled_at","name":"Disabled
+        At","required":false,"readonly":false,"description":"The date and time the
+        product was disabled (if it is disabled)."},{"field":"deleted_at","name":"Deleted
+        At","required":false,"readonly":true,"description":"The date and time the
+        product was deleted (if it is deleted)."},{"field":"blacklisted_at","name":"Blacklisted
+        At","required":false,"readonly":true,"description":"For internal use."},{"field":"admin_hold_at","name":"Admin
+        Hold At","required":false,"readonly":true,"description":"For internal use."},{"field":"minimum_alerts_needed","name":"Minimum
+        Alerts Needed","required":false,"readonly":true,"description":"For internal
+        use."},{"field":"slug","name":"Slug","required":false,"readonly":true,"description":"For
+        internal use."},{"field":"internal_id","name":"Internal ID","required":false,"readonly":true,"description":"For
+        internal use."}]'
+    http_version: 
+  recorded_at: Sat, 25 Mar 2017 22:19:55 GMT
+recorded_with: VCR 3.0.3

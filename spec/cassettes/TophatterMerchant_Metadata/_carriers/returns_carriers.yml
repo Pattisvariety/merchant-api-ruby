@@ -1,0 +1,81 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://tophatter.com/merchant_api/v1/metadata/carriers.json
+    body:
+      encoding: ASCII-8BIT
+      string: ''
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 25 Mar 2017 22:19:56 GMT
+      Etag:
+      - W/"df1934e98e60bb6c3169b8b7cb76b2df"
+      Server:
+      - nginx + Phusion Passenger
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger Enterprise
+      X-Request-Id:
+      - a40e6f97-3022-4992-8125-4d31ca008ab5
+      X-Request-Start:
+      - t=1490480396.593
+      X-Runtime:
+      - '0.031435'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA2xUQW7bMBD8iqCzmQJFTr05iZK4iVMjtoumt7W0thhLpEBK
+        cdSij+kT+oYi/+ouRdJq3YuwO7Mkl7Mjfk/Xy8Uy/ZB2trHpJL3GInuldIsF
+        vlJ+CQoKSBbatoTmLhMNZ5N0PSx06yhO5iCrZKaUfoFWamUHUtSS+Kvbe0qL
+        shriBC91XaPJcUDFrtIbqERNW1DFJ7UykBOlVcsB9VFKBUk25xNzjgXWNuKh
+        PUf47p5AHVAR2g/BJJ2pQsZayUmonVp03Ho5Td4lXhEYQNFZGJfcjak9MeeL
+        LwSdNyzXrVa75I4//piSYrHnjz+KLx+r/OVL3uYjNKDCsmdOwpIVyMORal0W
+        uKVUO2i0wUDbAISKC6x2sqsDvxn1ceNEH+Y2tRJOZyGA4UmazWm+2Wtj0PJY
+        sW4s+myS3qCpfX9JnLPYObRnnvbDnbStzC35Iz+jit0Io5LHztJB8Y5mSMMV
+        5lBBb/3s2AQ0JAoreO6ouPZslKukxkEVCQdRNQ+Gos8SWwVRlRfl8UuoN3pk
+        k9znYd0DtiUa3smGEmZUJaRq0SjnfGAPrzqzxz4Wta3bgsV86tRIy75T/5WS
+        ZcSutXkZzp4ZacvAHdVZ7w1IFQ3Q7Q0RpTvpnoxqbCkbwqsYT9I78ke84p4T
+        cWqLa20OYAoZbep9sT3idPjFLLnXYbjTztL/WjkndRspKn0cceTiDQIQzn7U
+        vXcjW4CT8B486QKr5ErXyLuxaAxEYvaX9J49Gcjy7PpspLvdiqPuxJ3sYreb
+        9/z0rB5WbCDFLWbri3/fmVsaGdqDNlXB/7vLCK77gaDXhD3aD8TwYnjmxv8h
+        YZUokGdGzuxeNNkL3n62wK1WHhINWEbIptoYpJoCk8w28PsXK06BVCIfKOG6
+        uFpk/DgVjXvMlwdpo20tJ0dbH5KvCO638bzCg/g2QEPVjz8AAAD//wMAmQDZ
+        PywGAAA=
+    http_version: 
+  recorded_at: Sat, 25 Mar 2017 22:19:55 GMT
+recorded_with: VCR 3.0.3

@@ -1,0 +1,78 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://tophatter.com/merchant_api/v1/metadata/states.json
+    body:
+      encoding: ASCII-8BIT
+      string: ''
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 25 Mar 2017 22:19:55 GMT
+      Etag:
+      - W/"168de2f5d680a792d990cea44b206b1c"
+      Server:
+      - nginx + Phusion Passenger
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger Enterprise
+      X-Request-Id:
+      - 2938fbdd-8bd9-4981-a121-e4d67139254f
+      X-Request-Start:
+      - t=1490480395.295
+      X-Runtime:
+      - '0.003018'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '618'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA2RTy47bMAz8FSGnFsgX9BY4ycab+IE8u70xNhMLsaVAknc3
+        Lfrv5SjeYNsCPmhGQ4oc0r9Gk5b8hUbfRpPlaAx0pC7CFaC7kPHkgdfAHTtd
+        kVEb6mxUbaJK/7Qmwh8CE2r1yTqjwSQTMLa1jmoLXERsDFdBV30AtRVqqn2Q
+        1EHZkxJ53x1j+DTBHbf0Ro6BZ4Lnkk3XuJ6jyCe27hzVT3jsqacO552cFxKn
+        taBFKii1b1ClUKU1NagnnQK0rTZWo80UGVNTa4oNpbnA5YcHS3S7ZBP66nID
+        fhG8sr32g3yF1Bl5T1XTew4BUdmddLeWTA08jVgbNJShoUxXjT6TAU4jFn+8
+        DUiZ5ZHw3vYOnWQwMLcuNOyMkrR4WqUeyeNr5aDHd73GEJSdWRPuRWbbjwwq
+        IWeldbB58mCndLm/naPSnI9uWJF8FvGbWlB39Y2OI8kXA/nMzjNsyZ8HJuN3
+        XcHlPIvMK8Wp5fvh/sW6CzBsLBoNZYFsxaWV6cQ1LLCVheOzhTsFlrBkY/yt
+        faX7hpWwt+zZBavW9+dKyNaNrXkwRrg1jN3Y/u+uN8mDfXS9Qddbxgg8o8Nt
+        Hon3uAPb7wJ2Rgeu1SZQYK9kXNapog/tTZvzp1ns0PYuUIMzXN9r2dR72fvJ
+        A3+K2KPKPbtOpgWIoAOJ1eYcogMHhB20r6zxOhKIOLAP6lPyAxw+3GwncYAv
+        8S/tpOS5dZWUPPzIXn3h94qvQTwxMpyv+Icn/4lP0I4HzVjNemevPJa+67pl
+        NSOPWiezf+NKqvRJV7grR7//AAAA//8DAPKRPwNrBAAA
+    http_version: 
+  recorded_at: Sat, 25 Mar 2017 22:19:54 GMT
+recorded_with: VCR 3.0.3

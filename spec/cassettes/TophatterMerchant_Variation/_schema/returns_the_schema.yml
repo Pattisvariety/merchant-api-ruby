@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://tophatter.dev/merchant_api/v1/variations/schema.json
+    body:
+      encoding: UTF-8
+      string: access_token=293da6763df7cb3b894a1831addcb52d
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Length:
+      - '45'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"4cca3ba8135e44f1993e296fef83396e"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 43aedc38-c07f-4ba0-88f0-1129dd6f6eec
+      X-Runtime:
+      - '0.509169'
+      Date:
+      - Sat, 25 Mar 2017 22:51:00 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '[{"field":"product_identifier","name":"Product Unique ID","required":true,"readonly":true,"description":"The
+        unique identifier of the product this variation belongs to."},{"field":"identifier","name":"Variation
+        Unique ID (SKU)","required":true,"readonly":true,"description":"The unique
+        identifier or SKU that your system uses to recognize this product variation.
+        Only letters, numbers, spaces, dashes and underscores are allowed."},{"field":"size","name":"Size","required":false,"readonly":true,"description":"The
+        size of the variation. You can specify any size you''d like, but we recommend
+        you use a size from our standardized list of sizes here: https://tophatter.readme.io/docs/sizes."},{"field":"color","name":"Color","required":false,"readonly":true,"description":"You
+        can specify any color you''d like, but we recommend you use a size from our
+        standardized list of colors here: https://tophatter.readme.io/docs/colors."},{"field":"quantity","name":"Quantity","required":true,"readonly":false,"description":"The
+        quantity available to sell for this variation."},{"field":"created_at","name":"Created
+        At","required":false,"readonly":true,"description":"The date and time the
+        variation was created."}]'
+    http_version: 
+  recorded_at: Sat, 25 Mar 2017 22:51:00 GMT
+recorded_with: VCR 3.0.3

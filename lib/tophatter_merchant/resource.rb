@@ -1,6 +1,11 @@
-require 'active_model'
-
 module TophatterMerchant
+  class BaseException < StandardError; end
+  class BadContentTypeException < BaseException; end
+  class UnauthorizedException < BaseException; end
+  class BadRequestException < BaseException; end
+  class NotFoundException < BaseException; end
+  class ServerErrorException < BaseException; end
+
   class Resource
     include ActiveModel::Model
 
@@ -33,7 +38,6 @@ module TophatterMerchant
 
     class << self
       def attr_accessor(*vars)
-        # TophatterMerchant.logger.debug "#{name}: #{vars.inspect} (attr_accessor)"
         @attributes ||= {}
         vars.each { |var| @attributes[var.to_s] = true }
         super(*vars)

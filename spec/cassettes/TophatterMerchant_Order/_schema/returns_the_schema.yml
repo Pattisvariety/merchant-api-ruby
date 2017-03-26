@@ -1,0 +1,81 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://tophatter.dev/merchant_api/v1/orders/schema.json
+    body:
+      encoding: UTF-8
+      string: access_token=293da6763df7cb3b894a1831addcb52d
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Length:
+      - '45'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"24c92ec13cfc95547df3f24f5c7c600e"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 21b2c686-e4df-4b09-811a-b0585157ddf9
+      X-Runtime:
+      - '0.681000'
+      Date:
+      - Sat, 25 Mar 2017 23:09:21 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '[{"field":"order_id","required":true,"readonly":true,"name":"Order
+        ID","description":"The ID of the order."},{"field":"status","required":false,"readonly":true,"name":"Order
+        Status","description":"The status of the order."},{"field":"carrier","required":true,"readonly":false,"name":"Carrier","description":"The
+        carrier (USPS, China EMS, etc) used to ship this order. The list of accepted
+        carries can be found [here](doc:carriers)."},{"field":"tracking_number","required":true,"readonly":false,"name":"Tracking
+        Number","description":"The tracking number provided by the carrier when this
+        order was shipped."},{"field":"product_name","required":false,"readonly":true,"name":"Product
+        Name","description":"The name of the product."},{"field":"product_identifier","required":false,"readonly":true,"name":"Product
+        Unique ID","description":"The unique id of the product."},{"field":"variation_identifier","required":false,"readonly":true,"name":"Variation
+        Unique ID","description":"The unique id of the product variation selected
+        by the customer during the checkout process."},{"field":"customer_id","required":false,"readonly":true,"name":"Customer
+        ID","description":"The unique ID of the customer."},{"field":"customer_name","required":false,"readonly":true,"name":"Customer
+        Name","description":"The full name of the customer."},{"field":"address1","required":false,"readonly":true,"name":"Address
+        Line #1","description":"Shipping address line 1."},{"field":"address2","required":false,"readonly":true,"name":"Address
+        Line #2","description":"Shipping address line 2."},{"field":"city","required":false,"readonly":true,"name":"City","description":"Shipping
+        address city."},{"field":"state","required":false,"readonly":true,"name":"State","description":"Shipping
+        address state."},{"field":"postal_code","required":false,"readonly":true,"name":"Postal
+        Code","description":"Shipping address postal code."},{"field":"country","required":false,"readonly":true,"name":"Country","description":"Shipping
+        address country."},{"field":"available_refunds","required":false,"readonly":true,"name":"Available
+        Refunds","description":"The partial refunds available for this order. When
+        you wish to partially refund an order you must specify on or more of these
+        fees to refund. See the [refund an order](doc:refund-an-order) documentation
+        for more info."},{"field":"refund_amount","required":false,"readonly":true,"name":"Refund
+        Amount","description":"The amount refunded to the customer for this order."},{"field":"disbursement_amount","required":false,"readonly":true,"name":"Disbursement
+        Amount","description":"The total amount that will be paid out (disbursed)
+        to the seller for this order."},{"field":"seller_fees_amount","required":false,"readonly":true,"name":"Fees
+        Amount","description":"The total amount of the fees charged to the seller
+        for this order."},{"field":"seller_fees","required":false,"readonly":true,"name":"Fees
+        Breakdown","description":"The breakdown of the fees charged to the seller
+        for this order."},{"field":"paid_at","required":false,"readonly":true,"name":"Paid
+        At","description":"The date and time the order was paid."},{"field":"created_at","required":false,"readonly":true,"name":"Created
+        At","description":"The date and time the order was created."}]'
+    http_version: 
+  recorded_at: Sat, 25 Mar 2017 23:09:21 GMT
+recorded_with: VCR 3.0.3

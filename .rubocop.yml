@@ -5,6 +5,8 @@ AllCops:
 
 Metrics/LineLength:
   Enabled: false
+Metrics/BlockLength:
+  Enabled: false
 Metrics/MethodLength:
   Enabled: false
 Metrics/ParameterLists:
@@ -29,4 +31,7 @@ Style/ElseAlignment:
   Enabled: false
 # http://www.rubydoc.info/github/bbatsov/rubocop/Rubocop/Cop/Style/IndentationWidth
 Style/IndentationWidth:
+  Enabled: false
+# https://github.com/bbatsov/ruby-style-guide#underscores-in-numerics
+Style/NumericLiterals:
   Enabled: false

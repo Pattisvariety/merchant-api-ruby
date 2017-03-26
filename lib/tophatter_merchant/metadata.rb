@@ -6,19 +6,34 @@ module TophatterMerchant
         get(url: "#{path}.json")
       end
 
-      # ap TophatterMerchant::Metadata.conditions
-      def conditions
-        get(url: "#{path}/conditions.json")
-      end
-
       # ap TophatterMerchant::Metadata.categories
       def categories
         get(url: "#{path}/categories.json")
       end
 
+      # ap TophatterMerchant::Metadata.conditions
+      def conditions
+        get(url: "#{path}/conditions.json")
+      end
+
+      # ap TophatterMerchant::Metadata.brands
+      def brands
+        get(url: "#{path}/brands.json")
+      end
+
+      # ap TophatterMerchant::Metadata.materials
+      def materials
+        get(url: "#{path}/materials.json")
+      end
+
       # ap TophatterMerchant::Metadata.sizes
       def sizes
         get(url: "#{path}/sizes.json")
+      end
+
+      # ap TophatterMerchant::Metadata.colors
+      def colors
+        get(url: "#{path}/colors.json")
       end
 
       # ap TophatterMerchant::Metadata.countries
@@ -49,19 +64,6 @@ module TophatterMerchant
       # ap TophatterMerchant::Metadata.carriers
       def carriers
         get(url: "#{path}/carriers.json")
-      end
-
-      # ap TophatterMerchant::Metadata.brands
-      def brands
-        get(url: "#{path}/brands.json")
-      end
-
-      def materials
-        get(url: "#{path}/materials.json")
-      end
-
-      def gemstones
-        get(url: "#{path}/gemstones.json")
       end
 
       protected

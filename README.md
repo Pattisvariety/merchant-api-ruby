@@ -8,8 +8,8 @@ gem 'tophatter-merchant', require: 'tophatter_merchant'
 
 ### Console Testing (Development)
 ```bash
-echo http://tophatter.dev/merchant_api/v1 > .api_host
-echo a42880c4b7d0809300bed27c453f883d > .access_token
+echo http://tophatter.dev/merchant_api/v1 > .api_path
+echo 293da6763df7cb3b894a1831addcb52d > .access_token
 bin/console
 ```
 
