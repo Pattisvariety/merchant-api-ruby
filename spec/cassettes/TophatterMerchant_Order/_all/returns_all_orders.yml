@@ -5,14 +5,14 @@ http_interactions:
     uri: http://tophatter.dev/merchant_api/v1/orders.json
     body:
       encoding: UTF-8
-      string: filter=&page=1&per_page=50&access_token=293da6763df7cb3b894a1831addcb52d
+      string: filter=unfulfilled&page=1&per_page=50&access_token=d8f979fc7d14fec0b075c0b73dbafb59
     headers:
       Accept:
       - "*/*; q=0.5, application/xml"
       Accept-Encoding:
       - gzip, deflate
       Content-Length:
-      - '72'
+      - '83'
       Content-Type:
       - application/x-www-form-urlencoded
       User-Agent:
@@ -31,26 +31,26 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"9553249edeaaca58a2259b57b23f7944"
+      - W/"7b46a655a5f5d77a7d98d51aceb5de74"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 8cf16c7f-1c61-4beb-b3b7-d42e21597fee
+      - 2630a206-807e-4e6e-a1ea-d4bd9e2f8294
       X-Runtime:
-      - '0.344292'
+      - '0.675904'
       Date:
-      - Sat, 25 Mar 2017 23:09:22 GMT
+      - Fri, 31 Mar 2017 23:32:52 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
       string: '[{"order_id":359887509,"status":"paid","carrier":null,"tracking_number":null,"product_name":"Paid
-        RIPE, Not Shipped","product_identifier":"DEFAULT","variation_identifier":null,"customer_name":"Optimus
+        Fullfillable 1","product_identifier":"DEFAULT","variation_identifier":null,"customer_name":"Optimus
         Prime","customer_id":981984628,"address1":"201 Valley Street","address2":null,"city":"Los
-        Altos","state":"CA","postal_code":"94022","country":"United States","available_refunds":{"buyer_fee":399.0},"refund_amount":0.0,"disbursement_amount":358.8,"seller_fees_amount":40.2,"seller_fees":[{"type":"commission_fee","amount":40.2}],"paid_at":"2017-03-25T14:06:54-07:00","created_at":"2017-03-25T16:07:55-07:00"},{"order_id":204240611,"status":"shipped","carrier":null,"tracking_number":null,"product_name":"Shipped
-        62 days ago (Yanwen - Not Returnable)","product_identifier":"DEFAULT","variation_identifier":null,"customer_name":"Optimus
+        Altos","state":"CA","postal_code":"94022","country":"United States","available_refunds":{"buyer_fee":399.0,"shipping_fee":3.0},"refund_amount":0.0,"disbursement_amount":358.8,"seller_fees_amount":40.2,"seller_fees":[{"type":"commission_fee","amount":40.2}],"paid_at":"2017-03-31T14:31:19-07:00","created_at":"2017-03-31T16:32:24-07:00"},{"order_id":113126549,"status":"paid","carrier":null,"tracking_number":null,"product_name":"Paid,
+        Fullfillable 2","product_identifier":"DEFAULT","variation_identifier":null,"customer_name":"Optimus
         Prime","customer_id":981984628,"address1":"201 Valley Street","address2":null,"city":"Los
-        Altos","state":"CA","postal_code":"94022","country":"United States","available_refunds":{"buyer_fee":399.0},"refund_amount":0.0,"disbursement_amount":275.55,"seller_fees_amount":123.45,"seller_fees":[{"type":"commission_fee","amount":123.45}],"paid_at":"2017-03-24T16:07:54-07:00","created_at":"2017-03-25T16:07:55-07:00"}]'
+        Altos","state":"CA","postal_code":"94022","country":"United States","available_refunds":{"buyer_fee":399.0,"shipping_fee":5.0},"refund_amount":0.0,"disbursement_amount":363.6,"seller_fees_amount":40.4,"seller_fees":[{"type":"commission_fee","amount":40.4}],"paid_at":"2017-03-30T16:32:19-07:00","created_at":"2017-03-30T16:32:19-07:00"}]'
     http_version: 
-  recorded_at: Sat, 25 Mar 2017 23:09:22 GMT
+  recorded_at: Fri, 31 Mar 2017 23:32:52 GMT
 recorded_with: VCR 3.0.3

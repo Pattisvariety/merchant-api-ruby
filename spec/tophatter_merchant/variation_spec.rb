@@ -2,11 +2,6 @@ require 'spec_helper'
 
 # rspec spec/tophatter_merchant/variation_spec.rb
 describe TophatterMerchant::Variation do
-  before :each do
-    TophatterMerchant.api_path = 'http://tophatter.dev/merchant_api/v1'
-    TophatterMerchant.access_token = '293da6763df7cb3b894a1831addcb52d'
-  end
-
   describe '.schema', :vcr do
     it 'returns the schema' do
       schema = TophatterMerchant::Variation.schema

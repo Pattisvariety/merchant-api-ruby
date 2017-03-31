@@ -5,7 +5,7 @@ http_interactions:
     uri: http://tophatter.dev/merchant_api/v1/orders/retrieve.json
     body:
       encoding: UTF-8
-      string: order_id=359887509&access_token=293da6763df7cb3b894a1831addcb52d
+      string: order_id=359887509&access_token=d8f979fc7d14fec0b075c0b73dbafb59
     headers:
       Accept:
       - "*/*; q=0.5, application/xml"
@@ -31,23 +31,23 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"9a17fef1262e80950bc9615373c78a5d"
+      - W/"cf176ea8ca697c2ceb2651f88dc3364d"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 7633b35b-7110-4065-bdb5-c87871d2b976
+      - 22b1180e-2b1d-4b91-9d2a-9141fe2793e1
       X-Runtime:
-      - '0.043379'
+      - '0.077706'
       Date:
-      - Sat, 25 Mar 2017 23:09:22 GMT
+      - Fri, 31 Mar 2017 23:32:52 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
       string: '{"order_id":359887509,"status":"paid","carrier":null,"tracking_number":null,"product_name":"Paid
-        RIPE, Not Shipped","product_identifier":"DEFAULT","variation_identifier":null,"customer_name":"Optimus
+        Fullfillable 1","product_identifier":"DEFAULT","variation_identifier":null,"customer_name":"Optimus
         Prime","customer_id":981984628,"address1":"201 Valley Street","address2":null,"city":"Los
-        Altos","state":"CA","postal_code":"94022","country":"United States","available_refunds":{"buyer_fee":399.0},"refund_amount":0.0,"disbursement_amount":358.8,"seller_fees_amount":40.2,"seller_fees":[{"type":"commission_fee","amount":40.2}],"paid_at":"2017-03-25T14:06:54-07:00","created_at":"2017-03-25T16:07:55-07:00"}'
+        Altos","state":"CA","postal_code":"94022","country":"United States","available_refunds":{"buyer_fee":399.0,"shipping_fee":3.0},"refund_amount":0.0,"disbursement_amount":358.8,"seller_fees_amount":40.2,"seller_fees":[{"type":"commission_fee","amount":40.2}],"paid_at":"2017-03-31T14:31:19-07:00","created_at":"2017-03-31T16:32:24-07:00"}'
     http_version: 
-  recorded_at: Sat, 25 Mar 2017 23:09:22 GMT
+  recorded_at: Fri, 31 Mar 2017 23:32:52 GMT
 recorded_with: VCR 3.0.3

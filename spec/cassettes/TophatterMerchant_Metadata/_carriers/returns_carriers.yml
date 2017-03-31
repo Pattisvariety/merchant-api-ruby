@@ -2,17 +2,17 @@
 http_interactions:
 - request:
     method: get
-    uri: https://tophatter.com/merchant_api/v1/metadata/carriers.json
+    uri: http://tophatter.dev/merchant_api/v1/metadata/carriers.json
     body:
-      encoding: ASCII-8BIT
-      string: ''
+      encoding: UTF-8
+      string: access_token=d8f979fc7d14fec0b075c0b73dbafb59
     headers:
       Accept:
       - "*/*; q=0.5, application/xml"
       Accept-Encoding:
       - gzip, deflate
       Content-Length:
-      - '0'
+      - '45'
       Content-Type:
       - application/x-www-form-urlencoded
       User-Agent:
@@ -22,60 +22,66 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      Content-Encoding:
-      - gzip
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Sat, 25 Mar 2017 22:19:56 GMT
-      Etag:
-      - W/"df1934e98e60bb6c3169b8b7cb76b2df"
-      Server:
-      - nginx + Phusion Passenger
-      Status:
-      - 200 OK
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
       X-Frame-Options:
       - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger Enterprise
-      X-Request-Id:
-      - a40e6f97-3022-4992-8125-4d31ca008ab5
-      X-Request-Start:
-      - t=1490480396.593
-      X-Runtime:
-      - '0.031435'
       X-Xss-Protection:
       - 1; mode=block
-      Transfer-Encoding:
-      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"f2803c7b377ffc17447314bf2bcaa29e"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 652edc9a-d3c3-4823-87ad-50070d1c6b4a
+      X-Runtime:
+      - '0.030310'
+      Date:
+      - Fri, 31 Mar 2017 23:33:13 GMT
       Connection:
-      - keep-alive
+      - close
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        H4sIAAAAAAAAA2xUQW7bMBD8iqCzmQJFTr05iZK4iVMjtoumt7W0thhLpEBK
-        cdSij+kT+oYi/+ouRdJq3YuwO7Mkl7Mjfk/Xy8Uy/ZB2trHpJL3GInuldIsF
-        vlJ+CQoKSBbatoTmLhMNZ5N0PSx06yhO5iCrZKaUfoFWamUHUtSS+Kvbe0qL
-        shriBC91XaPJcUDFrtIbqERNW1DFJ7UykBOlVcsB9VFKBUk25xNzjgXWNuKh
-        PUf47p5AHVAR2g/BJJ2pQsZayUmonVp03Ho5Td4lXhEYQNFZGJfcjak9MeeL
-        LwSdNyzXrVa75I4//piSYrHnjz+KLx+r/OVL3uYjNKDCsmdOwpIVyMORal0W
-        uKVUO2i0wUDbAISKC6x2sqsDvxn1ceNEH+Y2tRJOZyGA4UmazWm+2Wtj0PJY
-        sW4s+myS3qCpfX9JnLPYObRnnvbDnbStzC35Iz+jit0Io5LHztJB8Y5mSMMV
-        5lBBb/3s2AQ0JAoreO6ouPZslKukxkEVCQdRNQ+Gos8SWwVRlRfl8UuoN3pk
-        k9znYd0DtiUa3smGEmZUJaRq0SjnfGAPrzqzxz4Wta3bgsV86tRIy75T/5WS
-        ZcSutXkZzp4ZacvAHdVZ7w1IFQ3Q7Q0RpTvpnoxqbCkbwqsYT9I78ke84p4T
-        cWqLa20OYAoZbep9sT3idPjFLLnXYbjTztL/WjkndRspKn0cceTiDQIQzn7U
-        vXcjW4CT8B486QKr5ErXyLuxaAxEYvaX9J49Gcjy7PpspLvdiqPuxJ3sYreb
-        9/z0rB5WbCDFLWbri3/fmVsaGdqDNlXB/7vLCK77gaDXhD3aD8TwYnjmxv8h
-        YZUokGdGzuxeNNkL3n62wK1WHhINWEbIptoYpJoCk8w28PsXK06BVCIfKOG6
-        uFpk/DgVjXvMlwdpo20tJ0dbH5KvCO638bzCg/g2QEPVjz8AAAD//wMAmQDZ
-        PywGAAA=
+        eyJVU1BTIjoidXNwcyIsIkZlZEV4IjoiZmVkZXgiLCJDYW5hZGEgUG9zdCI6
+        ImNhbmFkYS1wb3N0IiwiVVBTIjoidXBzIiwiVVBTIE1haWwgSW5ub3ZhdGlv
+        bnMiOiJ1cHMtbWkiLCJESEwiOiJkaGwiLCJESEwgZUNvbW1lcmNlIjoiZGhs
+        LWdsb2JhbC1tYWlsIiwiT25UcmFjIjoib250cmFjIiwiQ2hpbmEgRU1TIjoi
+        Y2hpbmEtZW1zIiwiQ2hpbmEgUG9zdCI6ImNoaW5hLXBvc3QiLCJZYW53ZW4i
+        OiJ5YW53ZW4iLCJJbmRpYSBQb3N0IjoiaW5kaWEtcG9zdCIsIkFzZW5kaWEg
+        VVNBIC8gVVNQUyI6ImFzZW5kaWEtdXNhIiwiQXNlbmRpYSBVSyI6ImFzZW5k
+        aWEtdWsiLCI0UFgiOiI0cHgiLCJIb25nIEtvbmcgUG9zdCI6Imhvbmcta29u
+        Zy1wb3N0IiwiREhMIEhvbmcgS29uZyI6ImRobC1oayIsIkphcGFuIFBvc3Qi
+        OiJqYXBhbi1wb3N0IiwiVGFpd2FuIFBvc3QiOiJ0YWl3YW4tcG9zdCIsIlNp
+        bmdhcG9yZSBQb3N0Ijoic2luZ2Fwb3JlLXBvc3QiLCJCZWxnaXVtIFBvc3Qi
+        OiJicG9zdCIsIkRITCBHbG9iYWwgTWFpbCBBc2lhIjoiZGhsLWdsb2JhbC1t
+        YWlsLWFzaWEiLCJFTVBTIEV4cHJlc3MiOiJlbXBzZXhwcmVzcyIsIkdlcm1h
+        biBQb3N0IERITCI6ImRobC1nZXJtYW55IiwiR2xvYmVnaXN0aWNzIEluYy4i
+        OiJnbG9iZWdpc3RpY3MiLCJSdXNzaWFuIFBvc3QiOiJydXNzaWFuLXBvc3Qi
+        LCJNYWxheXNpYSBQb3N0IEVNUyAvIFBvc2xhanUiOiJtYWxheXNpYS1wb3N0
+        IiwiVGhhaWxhbmQgVGhhaSBQb3N0IjoidGhhaWxhbmQtcG9zdCIsIlZpZXRu
+        YW0gUG9zdCI6InZucG9zdCIsIkNhbWJvZGlhIFBvc3QiOiJjYW1ib2RpYS1w
+        b3N0IiwiTmV0aGVybGFuZHMgUG9zdCI6InBvc3RubC1pbnRlcm5hdGlvbmFs
+        IiwiVHVya2V5IFBvc3QiOiJwdHQtcG9zdGEiLCJZdW4gRXhwcmVzcyI6Inl1
+        bmV4cHJlc3MiLCJHZXJtYW4gUG9zdCI6ImRldXRzY2gtcG9zdCIsIklyaXNo
+        IFBvc3QiOiJhbi1wb3N0IiwiVWtyYWluZSBQb3N0IjoidWtycG9zaHRhIiwi
+        TGFzZXJzaGlwIjoibGFzZXJzaGlwIiwiS29yZWEgUG9zdCI6ImtvcmVhLXBv
+        c3QiLCJESEwgR2xvYmFsIEZvcndhcmRpbmciOiJkaGwtZ2xvYmFsLWZvcndh
+        cmRpbmciLCJVQkkgTG9naXN0aWNzIEF1c3RyYWxpYSI6InViaS1sb2dpc3Rp
+        Y3MiLCJBdXN0cmFsaWEgUG9zdCI6ImF1c3RyYWxpYS1wb3N0IiwiUm95YWwg
+        TWFpbCI6InJveWFsLW1haWwiLCJZb2RlbCBEb21lc3RpYyI6InlvZGVsIiwi
+        WW9kZWwgSW50ZXJuYXRpb25hbCI6InlvZGVsLWludGVybmF0aW9uYWwiLCJT
+        LkYuIEV4cHJlc3MiOiJzZi1leHByZXNzIiwiUy5GIEludGVybmF0aW9uYWwi
+        OiJzZmIyYyIsIlROVCI6InRudCIsIkVVQiI6ImNoaW5hLXBvc3QiLCJteUhl
+        cm1lcyBVUyI6Im15aGVybWVzLXVrIiwiSGVybWVzIEdlcm1hbnkiOiJoZXJt
+        ZXMtZGUiLCJMaWV0dXZvcyBQYcWhdGFzIjoibGlldHV2b3MtcGFzdGFzIiwi
+        Q29ycmVvcyBkZSBFc3Bhw7FhIjoic3BhaW4tY29ycmVvcy1lcyIsIkRQRVgi
+        OiJkcGV4IiwiU3dpc3MgUG9zdCI6InN3aXNzLXBvc3QiLCJOZXcgWmVhbGFu
+        ZCBQb3N0IjoibmV3LXplYWxhbmQtcG9zdCIsIlBvc3ROb3JkIERlbm1hcmsi
+        OiJkYW5tYXJrLXBvc3QiLCJXaXNoUG9zdCI6Indpc2hwb3N0IiwiSGVybWVz
+        d29ybGQiOiJoZXJtZXMifQ==
     http_version: 
-  recorded_at: Sat, 25 Mar 2017 22:19:55 GMT
+  recorded_at: Fri, 31 Mar 2017 23:33:13 GMT
 recorded_with: VCR 3.0.3

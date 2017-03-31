@@ -5,7 +5,7 @@ http_interactions:
     uri: http://tophatter.dev/merchant_api/v1/variations/update.json
     body:
       encoding: UTF-8
-      string: quantity=99&identifier=CT1-S&access_token=293da6763df7cb3b894a1831addcb52d
+      string: quantity=99&identifier=CT1-S&access_token=d8f979fc7d14fec0b075c0b73dbafb59
     headers:
       Accept:
       - "*/*; q=0.5, application/xml"
@@ -31,28 +31,28 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"b537e3016e70441a3ae79b844c96e772"
+      - W/"6b51bc9a54481322b63c540fe3a1971b"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 8aeeb437-17bf-4b9a-85d7-9531242afe7f
+      - 9ef9edaf-bad4-4701-b2b9-70f4b8a76c95
       X-Runtime:
-      - '0.034810'
+      - '0.055918'
       Date:
-      - Sat, 25 Mar 2017 22:51:01 GMT
+      - Fri, 31 Mar 2017 23:33:08 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"product_identifier":"C-T-1","identifier":"CT1-S","size":"S","color":null,"quantity":99,"created_at":"2017-03-25T15:17:23-07:00"}'
+      string: '{"product_identifier":"C-T-1","identifier":"CT1-S","size":"S","color":null,"quantity":99,"created_at":"2017-03-31T16:32:25-07:00","disabled_at":null,"deleted_at":null}'
     http_version: 
-  recorded_at: Sat, 25 Mar 2017 22:51:01 GMT
+  recorded_at: Fri, 31 Mar 2017 23:33:08 GMT
 - request:
     method: post
     uri: http://tophatter.dev/merchant_api/v1/variations/update.json
     body:
       encoding: UTF-8
-      string: quantity=999&identifier=CT1-S&access_token=293da6763df7cb3b894a1831addcb52d
+      string: quantity=999&identifier=CT1-S&access_token=d8f979fc7d14fec0b075c0b73dbafb59
     headers:
       Accept:
       - "*/*; q=0.5, application/xml"
@@ -78,20 +78,20 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"c8a1f6ecccd46d2a313a1f258f8ba01b"
+      - W/"09668dab21ffc7b969b26dc0a71fec1a"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 9b1958b3-04f6-479b-b893-dbbef05d0686
+      - c183b6f8-9ef6-4c4e-b9a5-508757c44ef2
       X-Runtime:
-      - '0.035316'
+      - '0.054949'
       Date:
-      - Sat, 25 Mar 2017 22:51:01 GMT
+      - Fri, 31 Mar 2017 23:33:08 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"product_identifier":"C-T-1","identifier":"CT1-S","size":"S","color":null,"quantity":999,"created_at":"2017-03-25T15:17:23-07:00"}'
+      string: '{"product_identifier":"C-T-1","identifier":"CT1-S","size":"S","color":null,"quantity":999,"created_at":"2017-03-31T16:32:25-07:00","disabled_at":null,"deleted_at":null}'
     http_version: 
-  recorded_at: Sat, 25 Mar 2017 22:51:01 GMT
+  recorded_at: Fri, 31 Mar 2017 23:33:08 GMT
 recorded_with: VCR 3.0.3

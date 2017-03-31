@@ -1,8 +1,9 @@
 Gemfile.lock
-.DS_Store
 *.swp
-/.bundle
+*.gem
+.DS_Store
+.bundle
 .idea
 .api_path
 .access_token
-*.gem
+coverage

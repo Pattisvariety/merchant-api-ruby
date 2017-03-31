@@ -2,17 +2,17 @@
 http_interactions:
 - request:
     method: get
-    uri: https://tophatter.com/merchant_api/v1/metadata/provinces.json
+    uri: http://tophatter.dev/merchant_api/v1/metadata/provinces.json
     body:
-      encoding: ASCII-8BIT
-      string: ''
+      encoding: UTF-8
+      string: access_token=d8f979fc7d14fec0b075c0b73dbafb59
     headers:
       Accept:
       - "*/*; q=0.5, application/xml"
       Accept-Encoding:
       - gzip, deflate
       Content-Length:
-      - '0'
+      - '45'
       Content-Type:
       - application/x-www-form-urlencoded
       User-Agent:
@@ -22,48 +22,31 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      Content-Encoding:
-      - gzip
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Sat, 25 Mar 2017 22:19:55 GMT
-      Etag:
-      - W/"c1aa6972986763942242a220c78625ba"
-      Server:
-      - nginx + Phusion Passenger
-      Status:
-      - 200 OK
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
       X-Frame-Options:
       - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger Enterprise
-      X-Request-Id:
-      - 24acd4b4-eaa3-468d-9e0a-d67b7928d76f
-      X-Request-Start:
-      - t=1490480395.710
-      X-Runtime:
-      - '0.002371'
       X-Xss-Protection:
       - 1; mode=block
-      Content-Length:
-      - '216'
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"c1aa6972986763942242a220c78625ba"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 1e8061e0-5c9d-4096-840b-5e63c8e9223b
+      X-Runtime:
+      - '0.023460'
+      Date:
+      - Fri, 31 Mar 2017 23:33:13 GMT
       Connection:
-      - keep-alive
+      - close
     body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAAAzyOMW7DMAxFryJo7gm6xUGGoomTwM6QkZJYWLBLApQUoSh6
-        95JB0UHDe/9Dn99+twWUCv7V7wb/4gfJNZfF7XlrnyGbH/bqT0C5cjA+WW/E
-        7gZpVHqOq8rxT35wo7QBJWfvCEEgsVjhaAV+gJsi1+fH4/RUUpeOpboZRcdZ
-        MhYLZwsbwaNVw5vimSpIZsXzqHiRTBHdIXWQ5N6KzWp2OWh2bRgwKl3t+gnK
-        CjUu2IHUTe/q7m1l+h/9Un2f/c8vAAAA//8DAPYM4y8RAQAA
+      encoding: UTF-8
+      string: '{"Alberta":"AB","British Columbia":"BC","Manitoba":"MB","New Brunswick":"NB","Newfoundland
+        and Labrador":"NL","Nova Scotia":"NS","Northwest Territories":"NT","Nunavut":"NU","Ontario":"ON","Prince
+        Edward Island":"PE","Quebec":"QC","Saskatchewan":"SK","Yukon Territory":"YT"}'
     http_version: 
-  recorded_at: Sat, 25 Mar 2017 22:19:55 GMT
+  recorded_at: Fri, 31 Mar 2017 23:33:13 GMT
 recorded_with: VCR 3.0.3

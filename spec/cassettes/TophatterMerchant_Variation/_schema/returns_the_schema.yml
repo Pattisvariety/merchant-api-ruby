@@ -5,7 +5,7 @@ http_interactions:
     uri: http://tophatter.dev/merchant_api/v1/variations/schema.json
     body:
       encoding: UTF-8
-      string: access_token=293da6763df7cb3b894a1831addcb52d
+      string: access_token=d8f979fc7d14fec0b075c0b73dbafb59
     headers:
       Accept:
       - "*/*; q=0.5, application/xml"
@@ -31,15 +31,15 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"4cca3ba8135e44f1993e296fef83396e"
+      - W/"2997c4864dcc76d8828f1189f17a099d"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 43aedc38-c07f-4ba0-88f0-1129dd6f6eec
+      - d05a2281-8713-49a9-b9fd-f3e34a9dd42b
       X-Runtime:
-      - '0.509169'
+      - '0.055031'
       Date:
-      - Sat, 25 Mar 2017 22:51:00 GMT
+      - Fri, 31 Mar 2017 23:33:08 GMT
       Connection:
       - close
     body:
@@ -55,7 +55,10 @@ http_interactions:
         standardized list of colors here: https://tophatter.readme.io/docs/colors."},{"field":"quantity","name":"Quantity","required":true,"readonly":false,"description":"The
         quantity available to sell for this variation."},{"field":"created_at","name":"Created
         At","required":false,"readonly":true,"description":"The date and time the
-        variation was created."}]'
+        variation was created."},{"field":"disabled_at","name":"Disabled At","required":false,"readonly":true,"description":"The
+        date and time the variation was disabled."},{"field":"deleted_at","name":"Deleted
+        At","required":false,"readonly":true,"description":"The date and time the
+        variation was deleted."}]'
     http_version: 
-  recorded_at: Sat, 25 Mar 2017 22:51:00 GMT
+  recorded_at: Fri, 31 Mar 2017 23:33:08 GMT
 recorded_with: VCR 3.0.3

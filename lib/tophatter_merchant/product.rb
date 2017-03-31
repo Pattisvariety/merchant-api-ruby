@@ -5,16 +5,14 @@ module TophatterMerchant
                   :condition, :brand, :material, # Facets
                   :available_quantity, :variations, # Variations
                   :starting_bid, :buy_now_price, :retail_price, :cost_basis, # Pricing
-                  :shipping_origin, :days_to_fulfill, :weight, # Shipping
-                  :shipping_price, :days_to_deliver,
-                  :expedited_shipping_price, :expedited_days_to_deliver,
+                  :shipping_price, :days_to_deliver, # Shipping
+                  :expedited_shipping_price, :expedited_days_to_deliver, # Shipping (Expedited)
+                  :days_to_fulfill, :shipping_origin, :weight, # Shipping (Handling)
                   :buy_one_get_one_price, :accessory_price, :accessory_description, # Upsells
                   :primary_image, :extra_images, :all_images, # Images
                   :ratings_average, :ratings_count, # Ratings
                   :created_at, :updated_at, :disabled_at, :deleted_at, # Timestamps
-                  :success_fee_bid, :minimum_alerts_needed, # Undocumented
-                  :blacklisted_at, :admin_hold_at,
-                  :slug, :internal_id
+                  :internal_id, :slug, :admin_banned_at, :admin_hold_at, :admin_reason, :success_fee_bid_enabled, :success_fee_bid # Admin
 
     def id
       created_at.present? ? identifier : nil

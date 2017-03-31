@@ -38,13 +38,13 @@ describe TophatterMerchant::Metadata do
     end
   end
 
-  describe '.brands' do
-    it 'returns brands', :vcr do
-      result = TophatterMerchant::Metadata.brands
-      expect(result.key?('Home')).to be(true)
-      expect(result['Home'].include?('Ninja')).to be(true)
-    end
-  end
+  # describe '.brands' do
+  #   it 'returns brands', :vcr do
+  #     result = TophatterMerchant::Metadata.brands
+  #     expect(result.key?('Home')).to be(true)
+  #     expect(result['Home'].include?('Ninja')).to be(true)
+  #   end
+  # end
 
   describe '.materials' do
     it 'returns materials', :vcr do

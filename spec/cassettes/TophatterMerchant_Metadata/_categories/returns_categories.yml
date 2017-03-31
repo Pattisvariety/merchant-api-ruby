@@ -2,17 +2,17 @@
 http_interactions:
 - request:
     method: get
-    uri: https://tophatter.com/merchant_api/v1/metadata/categories.json
+    uri: http://tophatter.dev/merchant_api/v1/metadata/categories.json
     body:
-      encoding: ASCII-8BIT
-      string: ''
+      encoding: UTF-8
+      string: access_token=d8f979fc7d14fec0b075c0b73dbafb59
     headers:
       Accept:
       - "*/*; q=0.5, application/xml"
       Accept-Encoding:
       - gzip, deflate
       Content-Length:
-      - '0'
+      - '45'
       Content-Type:
       - application/x-www-form-urlencoded
       User-Agent:
@@ -22,76 +22,110 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      Content-Encoding:
-      - gzip
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Sat, 25 Mar 2017 22:19:51 GMT
-      Etag:
-      - W/"1fc46ae442e0793ca4f38061b1ba908a"
-      Server:
-      - nginx + Phusion Passenger
-      Status:
-      - 200 OK
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
       X-Frame-Options:
       - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger Enterprise
-      X-Request-Id:
-      - 0c66d582-5e55-4f14-b839-1f9cad59c673
-      X-Request-Start:
-      - t=1490480391.785
-      X-Runtime:
-      - '0.013347'
       X-Xss-Protection:
       - 1; mode=block
-      Transfer-Encoding:
-      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"1fc46ae442e0793ca4f38061b1ba908a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - a10f3a92-9f06-4bdd-8077-53a359657865
+      X-Runtime:
+      - '0.025105'
+      Date:
+      - Fri, 31 Mar 2017 23:33:13 GMT
       Connection:
-      - keep-alive
+      - close
     body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        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
-        AEjeaFaTGQAA
+      encoding: UTF-8
+      string: '["Accessories | Bags | Clutches & Evening Bags","Accessories | Bags
+        | Crossbody","Accessories | Bags | Satchels","Accessories | Bags | Shoulder
+        Bags & Hobos","Accessories | Bags | Totes & Backpacks","Accessories | Bags
+        | Weekenders & Duffles","Accessories | Bags | Other","Accessories | Sunglasses","Accessories
+        | Watches","Accessories | Wallets","Accessories | Wristlets","Accessories
+        | Other Accessories | Scarves","Accessories | Other Accessories | Keychains","Accessories
+        | Other Accessories | Hats","Accessories | Other Accessories | Hair Accessories","Accessories
+        | Other Accessories | Electronic Accessories","Accessories | Other Accessories
+        | Belts","Accessories | Other Accessories | Ties","Accessories | Other Accessories
+        | Tights/Socks","Accessories | Other Accessories | Other","Apparel | Intimates
+        | Bras","Apparel | Intimates | Underwear","Apparel | Intimates | Shapewear","Apparel
+        | Intimates | Other","Apparel | Tops | T-Shirts","Apparel | Tops | Blouses","Apparel
+        | Tops | Shirts","Apparel | Tops | Sweaters","Apparel | Tops | Sweatshirts","Apparel
+        | Tops | Vests","Apparel | Tops | Tanks","Apparel | Tops | Other","Apparel
+        | Jackets/Outerwear | Jackets","Apparel | Jackets/Outerwear | Coats","Apparel
+        | Jackets/Outerwear | Other","Apparel | Bottoms | Shorts","Apparel | Bottoms
+        | Skirts","Apparel | Bottoms | Pants","Apparel | Bottoms | Leggings","Apparel
+        | Bottoms | Other","Apparel | Dresses","Apparel | Sports & Fitness","Apparel
+        | Swim | Tops","Apparel | Swim | Bottoms","Apparel | Swim | One-pieces","Apparel
+        | Swim | Sets (Top & Bottom)","Apparel | Swim | Coverups","Apparel | Other","Beauty
+        | Skincare | Cleansers","Beauty | Skincare | Moisturizer","Beauty | Skincare
+        | Other","Beauty | Haircare | Shampoo","Beauty | Haircare | Conditioner","Beauty
+        | Haircare | Styling Tools","Beauty | Haircare | Other","Beauty | Hair Tools
+        | Flat Iron","Beauty | Hair Tools | Blow Dryer","Beauty | Hair Tools | Curling
+        Iron","Beauty | Hair Tools | Brushes","Beauty | Hair Tools | Other","Beauty
+        | Fragrance","Beauty | Makeup (Cosmetics) | Lip","Beauty | Makeup (Cosmetics)
+        | Eye","Beauty | Makeup (Cosmetics) | Face","Beauty | Makeup (Cosmetics) |
+        Cheek","Beauty | Makeup (Cosmetics) | Other","Beauty | Nails | Nail Polish","Beauty
+        | Nails | Nail Art","Beauty | Nails | Manicure Set","Beauty | Nails | Nail
+        Tools & Files","Beauty | Nails | Other","Beauty | Brushes | Face","Beauty
+        | Brushes | Eyes","Beauty | Brushes | Lip","Beauty | Brushes | Sets","Beauty
+        | Brushes | Other","Beauty | Bath & Body","Beauty | Other","Collectibles |
+        Memorabilia","Collectibles | Coins","Collectibles | Other","Edibles | Healthy","Edibles
+        | Desserts","Edibles | Gourmet","Edibles | Non Alcoholic Beverages","Edibles
+        | Other","Electronics | Audio | Headphones","Electronics | Audio | Home Theater
+        Systems","Electronics | Audio | Turntables","Electronics | Audio | MP3 Players","Electronics
+        | Audio | Shelf Systems","Electronics | Audio | Speakers","Electronics | Audio
+        | Other","Electronics | Hardware (Computers/Tablets/Phones) | TV","Electronics
+        | Hardware (Computers/Tablets/Phones) | Audio","Electronics | Hardware (Computers/Tablets/Phones)
+        | Mobile","Electronics | Hardware (Computers/Tablets/Phones) | Video","Electronics
+        | Hardware (Computers/Tablets/Phones) | Computers/Tablets","Electronics |
+        Hardware (Computers/Tablets/Phones) | Printers","Electronics | Hardware (Computers/Tablets/Phones)
+        | Other","Electronics | TV & Projectors","Electronics | Photography/Camera","Electronics
+        | Gaming","Electronics | Accessories","Electronics | Other","Home | Bed |
+        Pillows","Home | Bed | Sheets","Home | Bed | Comforter/Duvet","Home | Bed
+        | Throw","Home | Bed | Other","Home | Bath | Towels","Home | Bath | Other","Home
+        | Kitchen & Dining | Dinnerware","Home | Kitchen & Dining | Flatware","Home
+        | Kitchen & Dining | Serveware","Home | Kitchen & Dining | Bar & Glassware","Home
+        | Kitchen & Dining | Linens","Home | Kitchen & Dining | Other","Home | Lighting","Home
+        | Furniture","Home | Storage & Organization","Home | Electrics & Appliances
+        | Kitchen","Home | Electrics & Appliances | Cleaning","Home | Electrics &
+        Appliances | Other","Home | Decor | Art","Home | Decor | Wall Decor & Mirrors","Home
+        | Decor | Vases","Home | Decor | Other","Home | Outdoor | Tool","Home | Outdoor
+        | Seeds","Home | Outdoor | Outdoor Furniture","Home | Outdoor | Outdoor Accessories","Home
+        | Outdoor | Other","Home | Pet Supplies","Home | Other","Jewelry | Rings","Jewelry
+        | Necklaces","Jewelry | Bracelets","Jewelry | Earrings","Jewelry | Other","Jewelry
+        | Sets","Kids | Baby Apparel | Jackets/Outerwear","Kids | Baby Apparel | Tops","Kids
+        | Baby Apparel | Bottoms","Kids | Baby Apparel | Dresses","Kids | Baby Apparel
+        | Onesies","Kids | Baby Apparel | Pajamas","Kids | Baby Apparel | Sets","Kids
+        | Baby Apparel | Other","Kids | Toddler Apparel | Jackets/Outerwear","Kids
+        | Toddler Apparel | Tops","Kids | Toddler Apparel | Bottoms","Kids | Toddler
+        Apparel | Dresses","Kids | Toddler Apparel | Onesies","Kids | Toddler Apparel
+        | Pajamas","Kids | Toddler Apparel | Sets","Kids | Toddler Apparel | Other","Kids
+        | Kids/Youth Apparel | Jackets/Outerwear","Kids | Kids/Youth Apparel | Tops","Kids
+        | Kids/Youth Apparel | Bottoms","Kids | Kids/Youth Apparel | Dresses","Kids
+        | Kids/Youth Apparel | Onesies","Kids | Kids/Youth Apparel | Pajamas","Kids
+        | Kids/Youth Apparel | Sets","Kids | Kids/Youth Apparel | Other","Kids | Baby
+        Shoes | Boots","Kids | Baby Shoes | Sneakers","Kids | Baby Shoes | Sandals","Kids
+        | Baby Shoes | Booties","Kids | Baby Shoes | Other","Kids | Toddler Shoes
+        | Boots","Kids | Toddler Shoes | Sneakers","Kids | Toddler Shoes | Sandals","Kids
+        | Toddler Shoes | Booties","Kids | Toddler Shoes | Other","Kids | Kids/Youth
+        Shoes | Boots","Kids | Kids/Youth Shoes | Sneakers","Kids | Kids/Youth Shoes
+        | Sandals","Kids | Kids/Youth Shoes | Booties","Kids | Kids/Youth Shoes |
+        Other","Kids | Games & Toys","Shoes | Flats","Shoes | Heels","Shoes | Boots","Shoes
+        | Sneakers","Shoes | Sandals","Shoes | Wedges","Shoes | Other","Supplies |
+        Jewelry Supplies | Beads","Supplies | Jewelry Supplies | Charms","Supplies
+        | Jewelry Supplies | Pins","Supplies | Jewelry Supplies | Gemstones","Supplies
+        | Jewelry Supplies | Accessories","Supplies | Jewelry Supplies | Tools","Supplies
+        | Jewelry Supplies | Findings","Supplies | Jewelry Supplies | Other","Supplies
+        | Craft Supplies | Kits","Supplies | Craft Supplies | Fabric","Supplies |
+        Craft Supplies | Accessories","Supplies | Craft Supplies | Tools","Supplies
+        | Craft Supplies | Other","Supplies | Other","Other | Other"]'
     http_version: 
-  recorded_at: Sat, 25 Mar 2017 22:19:51 GMT
+  recorded_at: Fri, 31 Mar 2017 23:33:13 GMT
 recorded_with: VCR 3.0.3

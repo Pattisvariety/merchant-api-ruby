@@ -5,7 +5,7 @@ http_interactions:
     uri: http://tophatter.dev/merchant_api/v1/products/retrieve.json
     body:
       encoding: UTF-8
-      string: identifier=6631A&access_token=293da6763df7cb3b894a1831addcb52d
+      string: identifier=6631A&access_token=d8f979fc7d14fec0b075c0b73dbafb59
     headers:
       Accept:
       - "*/*; q=0.5, application/xml"
@@ -31,31 +31,31 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"ec60d17a676ed04f97f070b202540be3"
+      - W/"b0d60fc5254702eb483860c3dbb5322f"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 7a1ba06b-cdb0-4290-a905-70b5906bcdbc
+      - 09d3118c-c978-4d42-a13c-19db457b37f3
       X-Runtime:
-      - '0.034980'
+      - '0.064257'
       Date:
-      - Sat, 25 Mar 2017 22:33:13 GMT
+      - Fri, 31 Mar 2017 23:33:08 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
       string: '{"identifier":"6631A","category":"Electronics | Hardware (Computers/Tablets/Phones)
         | Mobile","title":"Apple iPhone 6S","description":"This is the description.","condition":"Refurbished
-        - Manufacturer","brand":null,"material":null,"available_quantity":3,"variations":[{"identifier":"6631A-BLACK","size":null,"color":"Black","quantity":2,"created_at":"2017-03-25T15:20:05-07:00"},{"identifier":"6631A-WHITE","size":null,"color":"White","quantity":1,"created_at":"2017-03-25T15:20:05-07:00"}],"starting_bid":1,"buy_now_price":150,"retail_price":null,"cost_basis":"75.0","minimum_alerts_needed":0,"success_fee_bid":"0.5","shipping_price":5,"shipping_origin":"United
-        States","weight":6,"days_to_fulfill":3,"days_to_deliver":5,"expedited_shipping_price":null,"expedited_days_to_deliver":null,"buy_one_get_one_price":null,"accessory_price":null,"accessory_description":null,"primary_image":"https://d38eepresuu519.cloudfront.net/b2aa7d2708324f756ffee551ba43a74f/original.jpg","extra_images":"https://d38eepresuu519.cloudfront.net/e615c55184c06f391dbd768f855904e6/original.jpg|https://d38eepresuu519.cloudfront.net/7cd125f0fa42c965675eabaf3309aa6d/original.jpg","all_images":[{"thumbnail":"https://d38eepresuu519.cloudfront.net/b2aa7d2708324f756ffee551ba43a74f/thumbnail.jpg","square":"https://d38eepresuu519.cloudfront.net/b2aa7d2708324f756ffee551ba43a74f/square.jpg","medium":"https://d38eepresuu519.cloudfront.net/b2aa7d2708324f756ffee551ba43a74f/medium.jpg","large":"https://d38eepresuu519.cloudfront.net/b2aa7d2708324f756ffee551ba43a74f/large.jpg","original":"https://d38eepresuu519.cloudfront.net/b2aa7d2708324f756ffee551ba43a74f/original.jpg"},{"thumbnail":"https://d38eepresuu519.cloudfront.net/e615c55184c06f391dbd768f855904e6/thumbnail.jpg","square":"https://d38eepresuu519.cloudfront.net/e615c55184c06f391dbd768f855904e6/square.jpg","medium":"https://d38eepresuu519.cloudfront.net/e615c55184c06f391dbd768f855904e6/medium.jpg","large":"https://d38eepresuu519.cloudfront.net/e615c55184c06f391dbd768f855904e6/large.jpg","original":"https://d38eepresuu519.cloudfront.net/e615c55184c06f391dbd768f855904e6/original.jpg"},{"thumbnail":"https://d38eepresuu519.cloudfront.net/7cd125f0fa42c965675eabaf3309aa6d/thumbnail.jpg","square":"https://d38eepresuu519.cloudfront.net/7cd125f0fa42c965675eabaf3309aa6d/square.jpg","medium":"https://d38eepresuu519.cloudfront.net/7cd125f0fa42c965675eabaf3309aa6d/medium.jpg","large":"https://d38eepresuu519.cloudfront.net/7cd125f0fa42c965675eabaf3309aa6d/large.jpg","original":"https://d38eepresuu519.cloudfront.net/7cd125f0fa42c965675eabaf3309aa6d/original.jpg"}],"ratings_count":null,"ratings_average":null,"created_at":"2017-03-25T15:20:05-07:00","updated_at":"2017-03-25T15:20:05-07:00","disabled_at":null,"deleted_at":null,"blacklisted_at":null,"admin_hold_at":null,"slug":"6631A","internal_id":992996131}'
+        - Manufacturer","brand":null,"material":null,"available_quantity":3,"variations":[{"identifier":"6631A-BLACK","size":null,"color":"Black","quantity":2,"created_at":"2017-03-31T16:33:06-07:00"},{"identifier":"6631A-WHITE","size":null,"color":"White","quantity":1,"created_at":"2017-03-31T16:33:06-07:00"}],"starting_bid":1,"buy_now_price":150,"retail_price":null,"cost_basis":"75.0","shipping_price":5,"shipping_origin":"United
+        States","weight":6,"days_to_fulfill":3,"days_to_deliver":5,"expedited_shipping_price":null,"expedited_days_to_deliver":null,"buy_one_get_one_price":null,"accessory_price":null,"accessory_description":null,"primary_image":"https://d38eepresuu519.cloudfront.net/b2aa7d2708324f756ffee551ba43a74f/original.jpg","extra_images":"https://d38eepresuu519.cloudfront.net/e615c55184c06f391dbd768f855904e6/original.jpg|https://d38eepresuu519.cloudfront.net/7cd125f0fa42c965675eabaf3309aa6d/original.jpg","all_images":[{"thumbnail":"https://d38eepresuu519.cloudfront.net/b2aa7d2708324f756ffee551ba43a74f/thumbnail.jpg","square":"https://d38eepresuu519.cloudfront.net/b2aa7d2708324f756ffee551ba43a74f/square.jpg","medium":"https://d38eepresuu519.cloudfront.net/b2aa7d2708324f756ffee551ba43a74f/medium.jpg","large":"https://d38eepresuu519.cloudfront.net/b2aa7d2708324f756ffee551ba43a74f/large.jpg","original":"https://d38eepresuu519.cloudfront.net/b2aa7d2708324f756ffee551ba43a74f/original.jpg"},{"thumbnail":"https://d38eepresuu519.cloudfront.net/e615c55184c06f391dbd768f855904e6/thumbnail.jpg","square":"https://d38eepresuu519.cloudfront.net/e615c55184c06f391dbd768f855904e6/square.jpg","medium":"https://d38eepresuu519.cloudfront.net/e615c55184c06f391dbd768f855904e6/medium.jpg","large":"https://d38eepresuu519.cloudfront.net/e615c55184c06f391dbd768f855904e6/large.jpg","original":"https://d38eepresuu519.cloudfront.net/e615c55184c06f391dbd768f855904e6/original.jpg"},{"thumbnail":"https://d38eepresuu519.cloudfront.net/7cd125f0fa42c965675eabaf3309aa6d/thumbnail.jpg","square":"https://d38eepresuu519.cloudfront.net/7cd125f0fa42c965675eabaf3309aa6d/square.jpg","medium":"https://d38eepresuu519.cloudfront.net/7cd125f0fa42c965675eabaf3309aa6d/medium.jpg","large":"https://d38eepresuu519.cloudfront.net/7cd125f0fa42c965675eabaf3309aa6d/large.jpg","original":"https://d38eepresuu519.cloudfront.net/7cd125f0fa42c965675eabaf3309aa6d/original.jpg"}],"ratings_count":null,"ratings_average":null,"created_at":"2017-03-31T16:33:06-07:00","updated_at":"2017-03-31T16:33:06-07:00","disabled_at":null,"deleted_at":null,"internal_id":992996130,"slug":"6631A","admin_banned_at":null,"admin_hold_at":null,"admin_reason":null,"success_fee_bid_enabled":true,"success_fee_bid":"0.5"}'
     http_version: 
-  recorded_at: Sat, 25 Mar 2017 22:33:13 GMT
+  recorded_at: Fri, 31 Mar 2017 23:33:08 GMT
 - request:
     method: post
     uri: http://tophatter.dev/merchant_api/v1/products/delete.json
     body:
       encoding: UTF-8
-      string: identifier=6631A&access_token=293da6763df7cb3b894a1831addcb52d
+      string: identifier=6631A&access_token=d8f979fc7d14fec0b075c0b73dbafb59
     headers:
       Accept:
       - "*/*; q=0.5, application/xml"
@@ -81,23 +81,23 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"ae15184f71e6b3b0df0d08ece54c6c64"
+      - W/"e09f1b0bf0ceae2504ed25ab678d20d0"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 6803f769-3aec-4cc7-a42b-b0a1a00ba4be
+      - 5fb40d67-656c-4567-9330-09a51aa0e303
       X-Runtime:
-      - '0.044500'
+      - '0.076508'
       Date:
-      - Sat, 25 Mar 2017 22:33:13 GMT
+      - Fri, 31 Mar 2017 23:33:08 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"identifier":"6631A-f43d76-DELETED","category":"Electronics | Hardware
+      string: '{"identifier":"6631A-34c59d-DELETED","category":"Electronics | Hardware
         (Computers/Tablets/Phones) | Mobile","title":"Apple iPhone 6S","description":"This
-        is the description.","condition":"Refurbished - Manufacturer","brand":null,"material":null,"available_quantity":3,"variations":[{"identifier":"6631A-BLACK-ef2a6f-DELETED","size":null,"color":"Black","quantity":2,"created_at":"2017-03-25T15:20:05-07:00"},{"identifier":"6631A-WHITE-b76777-DELETED","size":null,"color":"White","quantity":1,"created_at":"2017-03-25T15:20:05-07:00"}],"starting_bid":1,"buy_now_price":150,"retail_price":null,"cost_basis":"75.0","minimum_alerts_needed":0,"success_fee_bid":"0.5","shipping_price":5,"shipping_origin":"United
-        States","weight":6,"days_to_fulfill":3,"days_to_deliver":5,"expedited_shipping_price":null,"expedited_days_to_deliver":null,"buy_one_get_one_price":null,"accessory_price":null,"accessory_description":null,"primary_image":"https://d38eepresuu519.cloudfront.net/b2aa7d2708324f756ffee551ba43a74f/original.jpg","extra_images":"https://d38eepresuu519.cloudfront.net/e615c55184c06f391dbd768f855904e6/original.jpg|https://d38eepresuu519.cloudfront.net/7cd125f0fa42c965675eabaf3309aa6d/original.jpg","all_images":[{"thumbnail":"https://d38eepresuu519.cloudfront.net/b2aa7d2708324f756ffee551ba43a74f/thumbnail.jpg","square":"https://d38eepresuu519.cloudfront.net/b2aa7d2708324f756ffee551ba43a74f/square.jpg","medium":"https://d38eepresuu519.cloudfront.net/b2aa7d2708324f756ffee551ba43a74f/medium.jpg","large":"https://d38eepresuu519.cloudfront.net/b2aa7d2708324f756ffee551ba43a74f/large.jpg","original":"https://d38eepresuu519.cloudfront.net/b2aa7d2708324f756ffee551ba43a74f/original.jpg"},{"thumbnail":"https://d38eepresuu519.cloudfront.net/e615c55184c06f391dbd768f855904e6/thumbnail.jpg","square":"https://d38eepresuu519.cloudfront.net/e615c55184c06f391dbd768f855904e6/square.jpg","medium":"https://d38eepresuu519.cloudfront.net/e615c55184c06f391dbd768f855904e6/medium.jpg","large":"https://d38eepresuu519.cloudfront.net/e615c55184c06f391dbd768f855904e6/large.jpg","original":"https://d38eepresuu519.cloudfront.net/e615c55184c06f391dbd768f855904e6/original.jpg"},{"thumbnail":"https://d38eepresuu519.cloudfront.net/7cd125f0fa42c965675eabaf3309aa6d/thumbnail.jpg","square":"https://d38eepresuu519.cloudfront.net/7cd125f0fa42c965675eabaf3309aa6d/square.jpg","medium":"https://d38eepresuu519.cloudfront.net/7cd125f0fa42c965675eabaf3309aa6d/medium.jpg","large":"https://d38eepresuu519.cloudfront.net/7cd125f0fa42c965675eabaf3309aa6d/large.jpg","original":"https://d38eepresuu519.cloudfront.net/7cd125f0fa42c965675eabaf3309aa6d/original.jpg"}],"ratings_count":null,"ratings_average":null,"created_at":"2017-03-25T15:20:05-07:00","updated_at":"2017-03-25T15:33:13-07:00","disabled_at":"2017-03-25T15:33:13-07:00","deleted_at":"2017-03-25T15:33:13-07:00","blacklisted_at":null,"admin_hold_at":null,"slug":"6631A","internal_id":992996131}'
+        is the description.","condition":"Refurbished - Manufacturer","brand":null,"material":null,"available_quantity":3,"variations":[{"identifier":"6631A-BLACK-71865d-DELETED","size":null,"color":"Black","quantity":2,"created_at":"2017-03-31T16:33:06-07:00"},{"identifier":"6631A-WHITE-b95526-DELETED","size":null,"color":"White","quantity":1,"created_at":"2017-03-31T16:33:06-07:00"}],"starting_bid":1,"buy_now_price":150,"retail_price":null,"cost_basis":"75.0","shipping_price":5,"shipping_origin":"United
+        States","weight":6,"days_to_fulfill":3,"days_to_deliver":5,"expedited_shipping_price":null,"expedited_days_to_deliver":null,"buy_one_get_one_price":null,"accessory_price":null,"accessory_description":null,"primary_image":"https://d38eepresuu519.cloudfront.net/b2aa7d2708324f756ffee551ba43a74f/original.jpg","extra_images":"https://d38eepresuu519.cloudfront.net/e615c55184c06f391dbd768f855904e6/original.jpg|https://d38eepresuu519.cloudfront.net/7cd125f0fa42c965675eabaf3309aa6d/original.jpg","all_images":[{"thumbnail":"https://d38eepresuu519.cloudfront.net/b2aa7d2708324f756ffee551ba43a74f/thumbnail.jpg","square":"https://d38eepresuu519.cloudfront.net/b2aa7d2708324f756ffee551ba43a74f/square.jpg","medium":"https://d38eepresuu519.cloudfront.net/b2aa7d2708324f756ffee551ba43a74f/medium.jpg","large":"https://d38eepresuu519.cloudfront.net/b2aa7d2708324f756ffee551ba43a74f/large.jpg","original":"https://d38eepresuu519.cloudfront.net/b2aa7d2708324f756ffee551ba43a74f/original.jpg"},{"thumbnail":"https://d38eepresuu519.cloudfront.net/e615c55184c06f391dbd768f855904e6/thumbnail.jpg","square":"https://d38eepresuu519.cloudfront.net/e615c55184c06f391dbd768f855904e6/square.jpg","medium":"https://d38eepresuu519.cloudfront.net/e615c55184c06f391dbd768f855904e6/medium.jpg","large":"https://d38eepresuu519.cloudfront.net/e615c55184c06f391dbd768f855904e6/large.jpg","original":"https://d38eepresuu519.cloudfront.net/e615c55184c06f391dbd768f855904e6/original.jpg"},{"thumbnail":"https://d38eepresuu519.cloudfront.net/7cd125f0fa42c965675eabaf3309aa6d/thumbnail.jpg","square":"https://d38eepresuu519.cloudfront.net/7cd125f0fa42c965675eabaf3309aa6d/square.jpg","medium":"https://d38eepresuu519.cloudfront.net/7cd125f0fa42c965675eabaf3309aa6d/medium.jpg","large":"https://d38eepresuu519.cloudfront.net/7cd125f0fa42c965675eabaf3309aa6d/large.jpg","original":"https://d38eepresuu519.cloudfront.net/7cd125f0fa42c965675eabaf3309aa6d/original.jpg"}],"ratings_count":null,"ratings_average":null,"created_at":"2017-03-31T16:33:06-07:00","updated_at":"2017-03-31T16:33:08-07:00","disabled_at":"2017-03-31T16:33:08-07:00","deleted_at":"2017-03-31T16:33:08-07:00","internal_id":992996130,"slug":"6631A","admin_banned_at":null,"admin_hold_at":null,"admin_reason":null,"success_fee_bid_enabled":true,"success_fee_bid":"0.5"}'
     http_version: 
-  recorded_at: Sat, 25 Mar 2017 22:33:13 GMT
+  recorded_at: Fri, 31 Mar 2017 23:33:08 GMT
 recorded_with: VCR 3.0.3

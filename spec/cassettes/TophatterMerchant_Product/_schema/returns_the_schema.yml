@@ -5,7 +5,7 @@ http_interactions:
     uri: http://tophatter.dev/merchant_api/v1/products/schema.json
     body:
       encoding: UTF-8
-      string: access_token=293da6763df7cb3b894a1831addcb52d
+      string: access_token=d8f979fc7d14fec0b075c0b73dbafb59
     headers:
       Accept:
       - "*/*; q=0.5, application/xml"
@@ -31,15 +31,15 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"d30532b5aa5255482defc6602f9682b4"
+      - W/"6dca85d24e48b7e1b8fa05197b323666"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - aba8f939-841a-4be0-9ebb-575224046511
+      - a72289da-fae2-4f7f-93b4-ee19ca80d7ef
       X-Runtime:
-      - '0.018778'
+      - '0.060902'
       Date:
-      - Sat, 25 Mar 2017 22:19:55 GMT
+      - Fri, 31 Mar 2017 23:32:54 GMT
       Connection:
       - close
     body:
@@ -69,29 +69,27 @@ http_interactions:
         Suggested Retail Price. This field is recommended as it will show as a strikethrough
         price and appears next to the selling price for the product."},{"field":"cost_basis","name":"Cost
         Basis","required":false,"readonly":false,"description":"The original cost
-        (to you) of a product. Specifying it will allow you to easily see your profits."},{"field":"success_fee_bid","name":"Success
-        Fee Bid","required":false,"readonly":false,"description":"The Success Fee
-        Bid for this product."},{"field":"shipping_price","name":"Shipping Price","required":true,"readonly":false,"description":"The
-        shipping price of the product when someone in the US purchases one. This price
-        determines the shipping price to other countries when you set up your [shipping
-        rates](https://tophatter.com/sellers/shipping_rates)."},{"field":"shipping_origin","name":"Shipping
+        (to you) of a product. Specifying it will allow you to easily see your profits."},{"field":"shipping_price","name":"Shipping
+        Price","required":true,"readonly":false,"description":"The shipping price
+        of the product when someone in the US purchases one. This price determines
+        the shipping price to other countries when you set up your [shipping rates](https://tophatter.com/sellers/shipping_rates)."},{"field":"days_to_deliver","name":"Days
+        To Deliver","required":true,"readonly":false,"description":"The number of
+        days you expect the shipment to be in transit to the buyer. Do not include
+        the number of days it will take to fulfill the order."},{"field":"expedited_shipping_price","name":"Expedited
+        Shipping Price","required":false,"readonly":false,"description":"The shipping
+        price of the product when someone in the US purchases one and chooses expedited
+        shipping."},{"field":"expedited_days_to_deliver","name":"Expedited Days To
+        Deliver","required":false,"readonly":false,"description":"The number of days
+        you expect the shipment to be in transit to the buyer when the buyer chooses
+        expedited shipping."},{"field":"days_to_fulfill","name":"Days To Process Order","required":true,"readonly":false,"description":"The
+        number of days (after purchase) that it will take you to process & fulfill
+        the order by shipping the item."},{"field":"shipping_origin","name":"Shipping
         Origin","required":true,"readonly":false,"description":"The country the product
         ships from."},{"field":"weight","name":"Shipping Weight In Ounces","required":false,"readonly":false,"description":"The
         weight (in ounces) of the package when you ship this item. Used to help determine
-        shipping costs in certain scenarios."},{"field":"days_to_fulfill","name":"Days
-        To Process Order","required":true,"readonly":false,"description":"The number
-        of days (after purchase) that it will take you to process & fulfill the order
-        by shipping the item."},{"field":"days_to_deliver","name":"Days To Deliver","required":true,"readonly":false,"description":"The
-        number of days you expect the shipment to be in transit to the buyer. Do not
-        include the number of days it will take to fulfill the order."},{"field":"expedited_shipping_price","name":"Expedited
-        Shipping Price","required":false,"readonly":false,"description":"The shipping
-        price of the product when someone in the US purchases one and chooses expedited
-        shipping."},{"field":"expedited_days_to_deliver","name":"Expedited Delivery
-        Time","required":false,"readonly":false,"description":"The number of days
-        you expect the shipment to be in transit to the buyer when the buyer chooses
-        expedited shipping."},{"field":"buy_one_get_one_price","name":"Buy One Get
-        One Price","required":false,"readonly":false,"description":"Offer \"Buy One
-        Get One\" for $XX (should include any additional shipping cost)."},{"field":"accessory_price","name":"Accessory
+        shipping costs in certain scenarios."},{"field":"buy_one_get_one_price","name":"Buy
+        One Get One Price","required":false,"readonly":false,"description":"Offer
+        \"Buy One Get One\" for $XX (should include any additional shipping cost)."},{"field":"accessory_price","name":"Accessory
         Price","required":false,"readonly":false,"description":"Offer an accessory
         for $XX."},{"field":"accessory_description","name":"Accessory Description","required":false,"readonly":false,"description":"Description
         of the accessory."},{"field":"primary_image","name":"Primary Image","required":true,"readonly":false,"description":"URL
@@ -112,13 +110,15 @@ http_interactions:
         At","required":false,"readonly":false,"description":"The date and time the
         product was disabled (if it is disabled)."},{"field":"deleted_at","name":"Deleted
         At","required":false,"readonly":true,"description":"The date and time the
-        product was deleted (if it is deleted)."},{"field":"blacklisted_at","name":"Blacklisted
-        At","required":false,"readonly":true,"description":"For internal use."},{"field":"admin_hold_at","name":"Admin
-        Hold At","required":false,"readonly":true,"description":"For internal use."},{"field":"minimum_alerts_needed","name":"Minimum
-        Alerts Needed","required":false,"readonly":true,"description":"For internal
-        use."},{"field":"slug","name":"Slug","required":false,"readonly":true,"description":"For
-        internal use."},{"field":"internal_id","name":"Internal ID","required":false,"readonly":true,"description":"For
-        internal use."}]'
+        product was deleted (if it is deleted)."},{"field":"internal_id","name":"Internal
+        ID","required":false,"readonly":true,"description":"For internal use."},{"field":"slug","name":"Slug","required":false,"readonly":true,"description":"For
+        internal use."},{"field":"admin_banned_at","name":"Admin Banned  At","required":false,"readonly":true,"description":"For
+        internal use."},{"field":"admin_hold_at","name":"Admin Hold At","required":false,"readonly":true,"description":"For
+        internal use."},{"field":"admin_reason","name":"Admin Reason","required":false,"readonly":true,"description":"For
+        internal use."},{"field":"success_fee_bid_enabled","name":"Success Fee Bid
+        Enabled?","required":false,"readonly":true,"description":"For internal use."},{"field":"success_fee_bid","name":"Success
+        Fee Bid Amount","required":false,"readonly":true,"description":"For internal
+        use."}]'
     http_version: 
-  recorded_at: Sat, 25 Mar 2017 22:19:55 GMT
+  recorded_at: Fri, 31 Mar 2017 23:32:54 GMT
 recorded_with: VCR 3.0.3

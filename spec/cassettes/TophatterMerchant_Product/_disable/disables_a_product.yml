@@ -5,7 +5,7 @@ http_interactions:
     uri: http://tophatter.dev/merchant_api/v1/products/enable.json
     body:
       encoding: UTF-8
-      string: identifier=PFTBNU5&access_token=293da6763df7cb3b894a1831addcb52d
+      string: identifier=PFTBNU5&access_token=d8f979fc7d14fec0b075c0b73dbafb59
     headers:
       Accept:
       - "*/*; q=0.5, application/xml"
@@ -31,31 +31,31 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"cf8644931ece09e5bcc4495769daf3ef"
+      - W/"ddabc2df9c830db453f65bb6c176a844"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - fa5bf7d8-8bc8-4590-a9d9-f753e1d45ab7
+      - b94d27e7-4670-42b5-8a24-4e7e9dcb3a05
       X-Runtime:
-      - '0.037580'
+      - '0.061856'
       Date:
-      - Sat, 25 Mar 2017 22:26:27 GMT
+      - Fri, 31 Mar 2017 23:33:07 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
       string: '{"identifier":"PFTBNU5","category":"Apparel | Tops | Shirts","title":"Pay
-        Flow Test, With Shipping Price","description":"This is the lot description.","condition":"New","brand":"Foo","material":null,"available_quantity":100,"variations":[{"identifier":"PFTBNU5","size":null,"color":null,"quantity":100,"created_at":"2017-03-25T15:17:23-07:00"}],"starting_bid":18,"buy_now_price":100,"retail_price":1099,"cost_basis":"300.0","minimum_alerts_needed":0,"success_fee_bid":null,"shipping_price":13,"shipping_origin":"United
+        Flow Test, With Shipping Price","description":"This is the lot description.","condition":"New","brand":"Foo","material":null,"available_quantity":100,"variations":[{"identifier":"PFTBNU5","size":null,"color":null,"quantity":100,"created_at":"2017-03-31T16:32:25-07:00"}],"starting_bid":18,"buy_now_price":100,"retail_price":1099,"cost_basis":"300.0","shipping_price":13,"shipping_origin":"United
         States","weight":6,"days_to_fulfill":4,"days_to_deliver":4,"expedited_shipping_price":23,"expedited_days_to_deliver":1,"buy_one_get_one_price":50,"accessory_price":25,"accessory_description":"This
-        is a super awesome accessory.","primary_image":"https://d38eepresuu519.cloudfront.net/0127b02033b5ec927eef961f74688d5d/original.jpg","extra_images":"https://d38eepresuu519.cloudfront.net/60ded7eee5b92cdaffa13dd1ee5c0305/original.jpg","all_images":[{"thumbnail":"https://d38eepresuu519.cloudfront.net/0127b02033b5ec927eef961f74688d5d/thumbnail.jpg","square":"https://d38eepresuu519.cloudfront.net/0127b02033b5ec927eef961f74688d5d/square.jpg","medium":"https://d38eepresuu519.cloudfront.net/0127b02033b5ec927eef961f74688d5d/medium.jpg","large":"https://d38eepresuu519.cloudfront.net/0127b02033b5ec927eef961f74688d5d/large.jpg","original":"https://d38eepresuu519.cloudfront.net/0127b02033b5ec927eef961f74688d5d/original.jpg"},{"thumbnail":"https://d38eepresuu519.cloudfront.net/60ded7eee5b92cdaffa13dd1ee5c0305/thumbnail.jpg","square":"https://d38eepresuu519.cloudfront.net/60ded7eee5b92cdaffa13dd1ee5c0305/square.jpg","medium":"https://d38eepresuu519.cloudfront.net/60ded7eee5b92cdaffa13dd1ee5c0305/medium.jpg","large":"https://d38eepresuu519.cloudfront.net/60ded7eee5b92cdaffa13dd1ee5c0305/large.jpg","original":"https://d38eepresuu519.cloudfront.net/60ded7eee5b92cdaffa13dd1ee5c0305/original.jpg"}],"ratings_count":null,"ratings_average":null,"created_at":"2017-03-25T15:17:23-07:00","updated_at":"2017-03-25T15:26:27-07:00","disabled_at":null,"deleted_at":null,"blacklisted_at":null,"admin_hold_at":null,"slug":"PFTBNU5","internal_id":992996129}'
+        is a super awesome accessory.","primary_image":"https://d38eepresuu519.cloudfront.net/0127b02033b5ec927eef961f74688d5d/original.jpg","extra_images":"https://d38eepresuu519.cloudfront.net/60ded7eee5b92cdaffa13dd1ee5c0305/original.jpg","all_images":[{"thumbnail":"https://d38eepresuu519.cloudfront.net/0127b02033b5ec927eef961f74688d5d/thumbnail.jpg","square":"https://d38eepresuu519.cloudfront.net/0127b02033b5ec927eef961f74688d5d/square.jpg","medium":"https://d38eepresuu519.cloudfront.net/0127b02033b5ec927eef961f74688d5d/medium.jpg","large":"https://d38eepresuu519.cloudfront.net/0127b02033b5ec927eef961f74688d5d/large.jpg","original":"https://d38eepresuu519.cloudfront.net/0127b02033b5ec927eef961f74688d5d/original.jpg"},{"thumbnail":"https://d38eepresuu519.cloudfront.net/60ded7eee5b92cdaffa13dd1ee5c0305/thumbnail.jpg","square":"https://d38eepresuu519.cloudfront.net/60ded7eee5b92cdaffa13dd1ee5c0305/square.jpg","medium":"https://d38eepresuu519.cloudfront.net/60ded7eee5b92cdaffa13dd1ee5c0305/medium.jpg","large":"https://d38eepresuu519.cloudfront.net/60ded7eee5b92cdaffa13dd1ee5c0305/large.jpg","original":"https://d38eepresuu519.cloudfront.net/60ded7eee5b92cdaffa13dd1ee5c0305/original.jpg"}],"ratings_count":null,"ratings_average":null,"created_at":"2017-03-31T16:32:25-07:00","updated_at":"2017-03-31T16:33:07-07:00","disabled_at":null,"deleted_at":null,"internal_id":992996129,"slug":"PFTBNU5","admin_banned_at":null,"admin_hold_at":null,"admin_reason":null,"success_fee_bid_enabled":false,"success_fee_bid":null}'
     http_version: 
-  recorded_at: Sat, 25 Mar 2017 22:26:27 GMT
+  recorded_at: Fri, 31 Mar 2017 23:33:07 GMT
 - request:
     method: post
     uri: http://tophatter.dev/merchant_api/v1/products/disable.json
     body:
       encoding: UTF-8
-      string: identifier=PFTBNU5&access_token=293da6763df7cb3b894a1831addcb52d
+      string: identifier=PFTBNU5&access_token=d8f979fc7d14fec0b075c0b73dbafb59
     headers:
       Accept:
       - "*/*; q=0.5, application/xml"
@@ -81,23 +81,23 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"d0b44d9c79770f613d988a192266c7c3"
+      - W/"4c398bf363047d1330f7e40735c3311f"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 3e6abe31-87e3-40f9-becc-eb9770dd3f37
+      - e6752dcc-aa99-4271-894e-af9b17f52f18
       X-Runtime:
-      - '0.039369'
+      - '0.066301'
       Date:
-      - Sat, 25 Mar 2017 22:26:27 GMT
+      - Fri, 31 Mar 2017 23:33:08 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
       string: '{"identifier":"PFTBNU5","category":"Apparel | Tops | Shirts","title":"Pay
-        Flow Test, With Shipping Price","description":"This is the lot description.","condition":"New","brand":"Foo","material":null,"available_quantity":100,"variations":[{"identifier":"PFTBNU5","size":null,"color":null,"quantity":100,"created_at":"2017-03-25T15:17:23-07:00"}],"starting_bid":18,"buy_now_price":100,"retail_price":1099,"cost_basis":"300.0","minimum_alerts_needed":0,"success_fee_bid":null,"shipping_price":13,"shipping_origin":"United
+        Flow Test, With Shipping Price","description":"This is the lot description.","condition":"New","brand":"Foo","material":null,"available_quantity":100,"variations":[{"identifier":"PFTBNU5","size":null,"color":null,"quantity":100,"created_at":"2017-03-31T16:32:25-07:00"}],"starting_bid":18,"buy_now_price":100,"retail_price":1099,"cost_basis":"300.0","shipping_price":13,"shipping_origin":"United
         States","weight":6,"days_to_fulfill":4,"days_to_deliver":4,"expedited_shipping_price":23,"expedited_days_to_deliver":1,"buy_one_get_one_price":50,"accessory_price":25,"accessory_description":"This
-        is a super awesome accessory.","primary_image":"https://d38eepresuu519.cloudfront.net/0127b02033b5ec927eef961f74688d5d/original.jpg","extra_images":"https://d38eepresuu519.cloudfront.net/60ded7eee5b92cdaffa13dd1ee5c0305/original.jpg","all_images":[{"thumbnail":"https://d38eepresuu519.cloudfront.net/0127b02033b5ec927eef961f74688d5d/thumbnail.jpg","square":"https://d38eepresuu519.cloudfront.net/0127b02033b5ec927eef961f74688d5d/square.jpg","medium":"https://d38eepresuu519.cloudfront.net/0127b02033b5ec927eef961f74688d5d/medium.jpg","large":"https://d38eepresuu519.cloudfront.net/0127b02033b5ec927eef961f74688d5d/large.jpg","original":"https://d38eepresuu519.cloudfront.net/0127b02033b5ec927eef961f74688d5d/original.jpg"},{"thumbnail":"https://d38eepresuu519.cloudfront.net/60ded7eee5b92cdaffa13dd1ee5c0305/thumbnail.jpg","square":"https://d38eepresuu519.cloudfront.net/60ded7eee5b92cdaffa13dd1ee5c0305/square.jpg","medium":"https://d38eepresuu519.cloudfront.net/60ded7eee5b92cdaffa13dd1ee5c0305/medium.jpg","large":"https://d38eepresuu519.cloudfront.net/60ded7eee5b92cdaffa13dd1ee5c0305/large.jpg","original":"https://d38eepresuu519.cloudfront.net/60ded7eee5b92cdaffa13dd1ee5c0305/original.jpg"}],"ratings_count":null,"ratings_average":null,"created_at":"2017-03-25T15:17:23-07:00","updated_at":"2017-03-25T15:26:27-07:00","disabled_at":"2017-03-25T15:26:27-07:00","deleted_at":null,"blacklisted_at":null,"admin_hold_at":null,"slug":"PFTBNU5","internal_id":992996129}'
+        is a super awesome accessory.","primary_image":"https://d38eepresuu519.cloudfront.net/0127b02033b5ec927eef961f74688d5d/original.jpg","extra_images":"https://d38eepresuu519.cloudfront.net/60ded7eee5b92cdaffa13dd1ee5c0305/original.jpg","all_images":[{"thumbnail":"https://d38eepresuu519.cloudfront.net/0127b02033b5ec927eef961f74688d5d/thumbnail.jpg","square":"https://d38eepresuu519.cloudfront.net/0127b02033b5ec927eef961f74688d5d/square.jpg","medium":"https://d38eepresuu519.cloudfront.net/0127b02033b5ec927eef961f74688d5d/medium.jpg","large":"https://d38eepresuu519.cloudfront.net/0127b02033b5ec927eef961f74688d5d/large.jpg","original":"https://d38eepresuu519.cloudfront.net/0127b02033b5ec927eef961f74688d5d/original.jpg"},{"thumbnail":"https://d38eepresuu519.cloudfront.net/60ded7eee5b92cdaffa13dd1ee5c0305/thumbnail.jpg","square":"https://d38eepresuu519.cloudfront.net/60ded7eee5b92cdaffa13dd1ee5c0305/square.jpg","medium":"https://d38eepresuu519.cloudfront.net/60ded7eee5b92cdaffa13dd1ee5c0305/medium.jpg","large":"https://d38eepresuu519.cloudfront.net/60ded7eee5b92cdaffa13dd1ee5c0305/large.jpg","original":"https://d38eepresuu519.cloudfront.net/60ded7eee5b92cdaffa13dd1ee5c0305/original.jpg"}],"ratings_count":null,"ratings_average":null,"created_at":"2017-03-31T16:32:25-07:00","updated_at":"2017-03-31T16:33:07-07:00","disabled_at":"2017-03-31T16:33:07-07:00","deleted_at":null,"internal_id":992996129,"slug":"PFTBNU5","admin_banned_at":null,"admin_hold_at":null,"admin_reason":null,"success_fee_bid_enabled":false,"success_fee_bid":null}'
     http_version: 
-  recorded_at: Sat, 25 Mar 2017 22:26:27 GMT
+  recorded_at: Fri, 31 Mar 2017 23:33:08 GMT
 recorded_with: VCR 3.0.3

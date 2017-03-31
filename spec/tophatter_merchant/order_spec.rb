@@ -2,11 +2,6 @@ require 'spec_helper'
 
 # rspec spec/tophatter_merchant/order_spec.rb
 describe TophatterMerchant::Order do
-  before :each do
-    TophatterMerchant.api_path = 'http://tophatter.dev/merchant_api/v1'
-    TophatterMerchant.access_token = 'c574bc2f5f4e9da1975e7ae1103eea24'
-  end
-
   describe '.schema', :vcr do
     it 'returns the schema' do
       schema = TophatterMerchant::Order.schema
@@ -16,7 +11,7 @@ describe TophatterMerchant::Order do
 
   describe '.all' do
     it 'returns all orders', :vcr do
-      orders = TophatterMerchant::Order.all
+      orders = TophatterMerchant::Order.all(filter: 'unfulfilled')
       expect(orders.length).to be(2)
     end
   end

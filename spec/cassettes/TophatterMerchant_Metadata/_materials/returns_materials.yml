@@ -2,17 +2,17 @@
 http_interactions:
 - request:
     method: get
-    uri: https://tophatter.com/merchant_api/v1/metadata/materials.json
+    uri: http://tophatter.dev/merchant_api/v1/metadata/materials.json
     body:
-      encoding: ASCII-8BIT
-      string: ''
+      encoding: UTF-8
+      string: access_token=d8f979fc7d14fec0b075c0b73dbafb59
     headers:
       Accept:
       - "*/*; q=0.5, application/xml"
       Accept-Encoding:
       - gzip, deflate
       Content-Length:
-      - '0'
+      - '45'
       Content-Type:
       - application/x-www-form-urlencoded
       User-Agent:
@@ -22,61 +22,48 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      Content-Encoding:
-      - gzip
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Sat, 25 Mar 2017 22:19:53 GMT
-      Etag:
-      - W/"be736d3ee4eea194b4752b673f08d239"
-      Server:
-      - nginx + Phusion Passenger
-      Status:
-      - 200 OK
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
       X-Frame-Options:
       - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger Enterprise
-      X-Request-Id:
-      - d70f1aee-b3e5-4da0-95a7-9a136ab282e5
-      X-Request-Start:
-      - t=1490480393.156
-      X-Runtime:
-      - '0.002935'
       X-Xss-Protection:
       - 1; mode=block
-      Content-Length:
-      - '793'
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"be736d3ee4eea194b4752b673f08d239"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 52798b60-b03a-430d-bbb0-168d83bc22c0
+      X-Runtime:
+      - '0.020526'
+      Date:
+      - Fri, 31 Mar 2017 23:33:13 GMT
       Connection:
-      - keep-alive
+      - close
     body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAAA7RUy3LTShD9FZU3d0Pq7u/OcXACiYnBKiigWLStxppKa1rM
-        I4l8i3+n5yXJ7L2ac3r6NUfd+n+xPBzQWjYK7eK/74sHBNeiWbxZbMGhdtVk
-        WIN/ndEPA7GWc8XORbBlGtC6ePmFmeTYKXpa/HizuOMOL5d92fdgkEKBFehn
-        sHJ3mUrXsB+qWbnLVKm5aQjN5Qvdq8b++5W9ay9f6z2+IJkhFNh4cuqqZo3V
-        LVMTCxFBo3wXMIFT+gxWAWBw/NRydstodsV2zDfiaq2Izq+nCGntWWSeuDRO
-        Sh+rdCGWWjnQqV6Bk3vt9VHeGt79pVVuLD6RqfrMNsZ/RSJ+KVEzNoXNjbM2
-        QWmSpa2kYQwaL8VrqDbogILUt9hZ+R5poZdHCYs++Aq6MSqxDk6sC97Hxy47
-        dO1gXYZG6XTbMWVH3QB5m0kv3yahXx46KO7PMjG+kBM7dahq7uEk9BrNENq9
-        JuYmdhhmB+iQ8qzAaCQFcaLA/WOrt0O0t+KCDeshEcPZvzWD5QPL6IysN2Dj
-        nSr9r9hAKLrye2nlmzIHeXcIuFHQsQ6Cvu1QfAJaK4PVYx8D1uQ5q7VmaxVV
-        JdVtaNRFYHtMLuETlSfdsm0xi3uHXdHpjl+ykO+6Ho0CGpV5VyR+Dw0WJLnD
-        Z7n3+pRM9wPkrA+wN9CU9v5mvbLVA5w8qUiNkq8Tf4m9akqhDRAc2oyZdel9
-        w+ZYqmxkGESzjx6MO028NP24t6pJn+tRD6/hSMrNjuqG/Z6iWFsEQ/E00ka0
-        KJSNy/O0NdjmumPBTzLoe5n/eYPFth3ye8OPgA+t4ZwoLvqUwu9lh8Ly1exN
-        B5SmQsxDPq6Uvlr7Q1vCg+kbq5E6RWf5Ii8a7KDvWxmaAGWIBOc3COtlE1K1
-        XcdPw5Rjp/nlJ8GTjNok4Y5luXJsL2GUNt1UN4p78cLCx+mL7AFliGepg20u
-        VzScS5JMSYCI54+I3E/h/qhKV5O1Bn0qQ1KrI5pxV4suZ2LX3vzyomjAn2Uc
-        bV74z2iahNJaLn78/gMAAP//AwD2ClZ/kAgAAA==
+      encoding: UTF-8
+      string: '{"Accessories":["Leather","Patent Leather","Faux Leather","Nylon","Cotton","Polyester","Wool","Silk"],"Home":["Leather","Patent
+        Leather","Faux Leather","Nylon","Cotton","Polyester","Wool","Silk"],"Apparel":["Canvas","Leather","Patent
+        Leather","Faux Leather","Nylon","Cotton","Polyester","Wool","Silk"],"Baby
+        Apparel":["Leather","Patent Leather","Faux Leather","Nylon","Cotton","Polyester","Wool","Silk"],"Toddler
+        Apparel":["Leather","Patent Leather","Faux Leather","Nylon","Cotton","Polyester","Wool","Silk"],"Kids/Youth
+        Apparel":["Leather","Patent Leather","Faux Leather","Nylon","Cotton","Polyester","Wool","Silk"],"Jewelry":["Multi-Tone
+        Gold","Palladium","Platinum","Platinum Plated","Rhodium","Rhodium Plated","Rose
+        Gold","Rose Gold Filled","Rose Gold Plated","Silver Plated","Sterling Silver","Titanium","Titanium
+        Plated","Tungsten","White Gold","White Gold Filled","White Gold Plated","Yellow
+        Gold","Yellow Gold Filled","Yellow Gold Plated","Stainless Steel","Alloy Metal"],"Gemstones":["Agate","Alexandrite","Amazonite","Amber","Amethyst","Ametrine","Ammolite","Andalusite","Apatite","Aquamarine","Aventurine","Azotic
+        Topaz","Beryl","Bloodstone","Calcite","Carnelian","Cat''s Eye","Chalcedony","Charoite","Chrysocolla","Chrysoprase","Citrine","Coral","Cubic
+        Zirconia","Diamond","Emerald","Fire Opal","Fluorite","Fossil Coral","Garnet","Gaspeite","Goldstone","Goshenite","Hematite","Howlite","Imperial
+        Topaz","Iolite","Jadeite","Jasper","Kunzite","Kyanite","Labradorite","Labradorite","Lapis
+        Lazuli","Larimar","Lepidolite","Malachite","Moonstone","Morganite","Mystic
+        Quartz","Mystic Topaz","Obsidian","Onyx","Opal","Opal","Opal Doublet","Pearl","Peridot","Pietersite","Prehnite","Quartz","Rainbow
+        Moonstone","Rainbow Pyrite","Rhodochrosite","Rose Quartz","Rubellite Tourmaline","Ruby","Ruby-in-Fuchsite","Ruby-Zoisite","Rutile
+        Quartz","Rutile Topaz","Sapphire","Seraphinite","Serpentine","Smoky Quartz","Snowflake
+        Obsidian","Sodalite","Spinel","Star Diopside","Star Garnet","Star Lemon Quartz","Star
+        Moonstone","Star Rose Quartz","Star Ruby","Star Sapphire","Star Sunstone","Sugilite","Sunstone","Tanzanite","Tiger''s
+        Eye","Topaz","Tourmaline","Turquoise","Variscite","Verdite","Zircon"]}'
     http_version: 
-  recorded_at: Sat, 25 Mar 2017 22:19:52 GMT
+  recorded_at: Fri, 31 Mar 2017 23:33:13 GMT
 recorded_with: VCR 3.0.3

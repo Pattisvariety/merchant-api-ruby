@@ -2,17 +2,17 @@
 http_interactions:
 - request:
     method: get
-    uri: https://tophatter.com/merchant_api/v1/metadata/sizes.json
+    uri: http://tophatter.dev/merchant_api/v1/metadata/sizes.json
     body:
-      encoding: ASCII-8BIT
-      string: ''
+      encoding: UTF-8
+      string: access_token=d8f979fc7d14fec0b075c0b73dbafb59
     headers:
       Accept:
       - "*/*; q=0.5, application/xml"
       Accept-Encoding:
       - gzip, deflate
       Content-Length:
-      - '0'
+      - '45'
       Content-Type:
       - application/x-www-form-urlencoded
       User-Agent:
@@ -22,54 +22,37 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      Content-Encoding:
-      - gzip
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Sat, 25 Mar 2017 22:19:53 GMT
-      Etag:
-      - W/"718f127ecfc0beb33efe0e0f0cf38056"
-      Server:
-      - nginx + Phusion Passenger
-      Status:
-      - 200 OK
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
       X-Frame-Options:
       - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger Enterprise
-      X-Request-Id:
-      - 01913084-7a07-40d9-822b-905732207069
-      X-Request-Start:
-      - t=1490480393.571
-      X-Runtime:
-      - '0.003034'
       X-Xss-Protection:
       - 1; mode=block
-      Content-Length:
-      - '487'
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"718f127ecfc0beb33efe0e0f0cf38056"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 5dfe9a87-364f-4920-ae42-2378e6441c99
+      X-Runtime:
+      - '0.020799'
+      Date:
+      - Fri, 31 Mar 2017 23:33:13 GMT
       Connection:
-      - keep-alive
+      - close
     body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAAA6xTTW/TQBD9KyufgtQQe+24gVsrQELUISJGioV62NqjxMKx
-        o7VdUiH+e/fNmGgPFUiIw7x5npmdj93xz+CmLKnvO1tTH7z9FmyPpmmCqyCj
-        qh6PjtwZuyen358Ha5R83V8FN6eTsdTgyG7r3JAM4U52DBOyis4ONCAGJIAQ
-        Jnw4SZ2sEAdjBGsEcwR7BIfmaDg0HBoODUccoptbMuPwhGY+jNx+bs0jgbyj
-        ZjyT2prjqcEYF5JTP5B1ZGMaGgb20YAp6rZGzu2hkytZOuPy9XJqM2V2DWGG
-        JlbM3kCYyRih8IhBuEbiL3W758SYJGHHfy0BEB4zCE9Qek3l98aUMpe8qBvT
-        Dmr2ta3IqihVH9vyQP2rgC8Aniid69Azy2aomQ7nOvHsd127d9ZkrleedVob
-        9n1+dCU8Lx7OPDwpb5c2luhYk5ptcHhNPx4626rZ+haf4QIDxVizeMEXBZou
-        +FYynptxlfGeZCiQd1XVuLJeDZ0jASABLHPEfaqrflF043DwQ5PpbbjYbnqU
-        Py7qSz/D7zkvG4XD09NBmPFuM+Mhmf1tQbz5Lrn/dSu9C7jkemmPCukYShfS
-        M1RcSNdQSSF9QwkITwvpHeq6CO5/PQMAAP//AwCg4OeIfgQAAA==
+      encoding: UTF-8
+      string: '{"Accessories":["Small","Medium","Large","Extra Large"],"Apparel":["XS","S","M","L","XL","XXL","XXXL","1x","2x","3x","4x","0","2","4","6","8","10","12","14","16","18","20","22","24","26","28","30"],"Beauty":["Full","Travel","Deluxe
+        Sample","Sample","Tester","Palette","Set","Mini"],"Shoes":["5","5.5","6","6.5","7","7.5","8","8.5","9","9.5","10","10.5","11","11.5","12"],"Rings":["4","4.5","5","5.5","6","6.5","7","7.5","8","8.5","9","9.5","10","10.5","11","11.5","12","12.5","13","13.5","14"],"Necklaces":["Extra
+        Short (Under 16 Inches)","Short (16-20 Inches)","Medium (20-24 Inches)","Long
+        (24-28 Inches)","Extra Long (Over 28 Inches)"],"Baby Apparel":["Preemie (P)","Newborn
+        (NB)","0/3","3M","3/6","6M","6/9","9M","12M","18M","24M"],"Toddler Apparel":["2T","3T","4T","5T"],"Kids/Youth
+        Apparel":["4","5","6","6X","7","8","10","12","14","16","18","XS","S","M","L","XL"],"Baby
+        Shoes":["0","0.5","1","1.5","2","2.5","3","3.5","4","4.5","5","5.5","6","6.5","7"],"Toddler
+        Shoes":["7.5","8","8.5","9","9.5","10","10.5","11","11.5","12"],"Kids/Youth
+        Shoes":["12.5","13","13.5","1Y","1.5Y","2Y","2.5Y","3Y","3.5Y","4Y","4.5Y","5Y","5.5Y","6Y","6.5Y","7Y"]}'
     http_version: 
-  recorded_at: Sat, 25 Mar 2017 22:19:52 GMT
+  recorded_at: Fri, 31 Mar 2017 23:33:13 GMT
 recorded_with: VCR 3.0.3

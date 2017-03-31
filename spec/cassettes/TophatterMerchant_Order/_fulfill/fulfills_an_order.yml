@@ -5,7 +5,7 @@ http_interactions:
     uri: http://tophatter.dev/merchant_api/v1/orders/fulfill.json
     body:
       encoding: UTF-8
-      string: order_id=359887509&carrier=USPS&tracking_number=CX263292019US&access_token=293da6763df7cb3b894a1831addcb52d
+      string: order_id=359887509&carrier=USPS&tracking_number=CX263292019US&access_token=d8f979fc7d14fec0b075c0b73dbafb59
     headers:
       Accept:
       - "*/*; q=0.5, application/xml"
@@ -31,23 +31,23 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"8800c06c6bd0c8549d58c2201f4c54f5"
+      - W/"9e98225a188444c5917d0603361e88c7"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 60850788-fcbb-4c13-b5b4-771f0169ee7d
+      - 656b0f8a-07ba-440e-8334-93ca905117be
       X-Runtime:
-      - '0.534084'
+      - '0.743266'
       Date:
-      - Sat, 25 Mar 2017 23:09:22 GMT
+      - Fri, 31 Mar 2017 23:32:53 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
       string: '{"order_id":359887509,"status":"shipped","carrier":"usps","tracking_number":"CX263292019US","product_name":"Paid
-        RIPE, Not Shipped","product_identifier":"DEFAULT","variation_identifier":null,"customer_name":"Optimus
+        Fullfillable 1","product_identifier":"DEFAULT","variation_identifier":null,"customer_name":"Optimus
         Prime","customer_id":981984628,"address1":"201 Valley Street","address2":null,"city":"Los
-        Altos","state":"CA","postal_code":"94022","country":"United States","available_refunds":{"buyer_fee":399.0},"refund_amount":0.0,"disbursement_amount":358.8,"seller_fees_amount":40.2,"seller_fees":[{"type":"commission_fee","amount":40.2}],"paid_at":"2017-03-25T14:06:54-07:00","created_at":"2017-03-25T16:07:55-07:00"}'
+        Altos","state":"CA","postal_code":"94022","country":"United States","available_refunds":{"buyer_fee":399.0,"shipping_fee":3.0},"refund_amount":0.0,"disbursement_amount":358.8,"seller_fees_amount":40.2,"seller_fees":[{"type":"commission_fee","amount":40.2}],"paid_at":"2017-03-31T14:31:19-07:00","created_at":"2017-03-31T16:32:24-07:00"}'
     http_version: 
-  recorded_at: Sat, 25 Mar 2017 23:09:22 GMT
+  recorded_at: Fri, 31 Mar 2017 23:32:53 GMT
 recorded_with: VCR 3.0.3
