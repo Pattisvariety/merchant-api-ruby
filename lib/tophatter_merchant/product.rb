@@ -12,7 +12,7 @@ module TophatterMerchant
                   :primary_image, :extra_images, :all_images, # Images
                   :ratings_average, :ratings_count, # Ratings
                   :created_at, :updated_at, :disabled_at, :deleted_at, # Timestamps
-                  :internal_id, :slug, :admin_banned_at, :admin_hold_at, :admin_reason, :success_fee_bid_enabled, :success_fee_bid # Admin
+                  :internal_id, :slug, :admin_banned_at, :admin_hold_at, :admin_hold_responded_at, :admin_reason, :success_fee_bid_enabled, :success_fee_bid # Admin
 
     def id
       created_at.present? ? identifier : nil
