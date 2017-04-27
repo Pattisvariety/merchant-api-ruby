@@ -3,8 +3,6 @@
 require 'bundler/setup'
 require 'rest-client'
 require 'tophatter_merchant'
-require 'awesome_print'
-require 'pry'
 
 begin
   TophatterMerchant.api_path = File.read('.api_path').chomp
@@ -21,6 +19,9 @@ rescue Errno::ENOENT
 end
 
 TophatterMerchant.logger.level = Logger::DEBUG
+
+require 'awesome_print'
+require 'pry'
 
 AwesomePrint.pry!
 Pry.start
