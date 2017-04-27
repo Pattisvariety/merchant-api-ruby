@@ -20,9 +20,6 @@ module TophatterMerchant
   end
 end
 
-require File.dirname(__FILE__) + '/tophatter_merchant/version'
-
-# Resources:
 require File.dirname(__FILE__) + '/tophatter_merchant/resource'
 require File.dirname(__FILE__) + '/tophatter_merchant/metadata'
 require File.dirname(__FILE__) + '/tophatter_merchant/order'

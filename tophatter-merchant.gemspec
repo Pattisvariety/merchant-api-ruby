@@ -1,14 +1,11 @@
 # -*- encoding: utf-8 -*-
 
-$LOAD_PATH.push File.expand_path('../lib', __FILE__)
-require 'tophatter_merchant/version'
-
 # To publish the next version:
 # gem build tophatter-merchant.gemspec
-# gem push tophatter-merchant-<version>.gem
+# gem push tophatter-merchant-1.1.6.gem
 Gem::Specification.new do |s|
   s.name        = 'tophatter-merchant'
-  s.version     = TophatterMerchant::VERSION
+  s.version     = '1.1.6'
   s.platform    = Gem::Platform::RUBY
   s.licenses    = ['MIT']
   s.authors     = ['Chris Estreich']
@@ -16,6 +13,8 @@ Gem::Specification.new do |s|
   s.homepage    = 'https://github.com/tophatter/merchant-api-ruby'
   s.summary     = 'Manage your inventory and fulfill orders on Tophatter.'
   s.description = 'The Tophatter merchant platform is an e-commerce platform. It allows merchants to manage inventory and fulfill orders on Tophatter.'
+
+  s.extra_rdoc_files = ['README.md']
 
   s.required_ruby_version = '~> 2.0'
 
