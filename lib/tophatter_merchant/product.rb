@@ -53,8 +53,18 @@ module TophatterMerchant
       end
 
       # ap TophatterMerchant::Product.all.map(&:to_h)
-      def all(status: nil, category: nil, page: 1, per_page: 50, pagination: nil, sort: nil)
-        result = get(url: "#{path}.json", params: { status: status, category: category, page: page, per_page: per_page, pagination: pagination, sort: sort })
+      def all(status: nil, category: nil, health_status: nil, page: 1, per_page: 50, pagination: nil, sort: nil)
+        params = {
+          status: status,
+          category: category,
+          health_status: health_status,
+          page: page,
+          per_page: per_page,
+          pagination: pagination,
+          sort: sort
+        }
+
+        result = get(url: "#{path}.json", params: params)
 
         if pagination.present?
           result['results'] = result['results'].map { |hash| Product.new(hash) }
