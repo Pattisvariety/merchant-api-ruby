@@ -12,6 +12,7 @@ module TophatterMerchant
                   :primary_image, :extra_images, :all_images, # Images
                   :ratings_average, :ratings_count, # Ratings
                   :created_at, :updated_at, :disabled_at, :deleted_at, # Timestamps
+                  :catalog_only_at, :in_review_at, :approved_at, :refused_at, :held_at, # SKU Lifecycle
                   :internal_id, :slug, # Admin
                   :admin_banned_at, :admin_hold_at, :admin_hold_responded_at, :admin_reason,
                   :success_fee_bid_enabled, :success_fee_bid,
@@ -34,7 +35,7 @@ module TophatterMerchant
       hash = to_h
 
       # Delete the keys that shouldn't be copied.
-      %w(identifier primary_image extra_images all_images ratings_average ratings_count created_at updated_at disabled_at deleted_at blacklisted_at slug admin_hold_at).each do |key|
+      %w(identifier primary_image extra_images all_images ratings_average ratings_count created_at updated_at disabled_at deleted_at catalog_only_at in_review_at approved_at refused_at held_at blacklisted_at slug admin_hold_at).each do |key|
         hash.delete(key)
         hash['variations'].each { |variation| variation.delete(key) }
       end

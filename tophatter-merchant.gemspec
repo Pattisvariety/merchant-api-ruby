@@ -5,7 +5,7 @@
 # gem push tophatter-merchant-1.1.8.gem
 Gem::Specification.new do |s|
   s.name        = 'tophatter-merchant'
-  s.version     = '1.1.8'
+  s.version     = '1.1.9'
   s.platform    = Gem::Platform::RUBY
   s.licenses    = ['MIT']
   s.authors     = ['Chris Estreich']
