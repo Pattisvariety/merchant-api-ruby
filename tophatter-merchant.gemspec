@@ -2,10 +2,10 @@
 
 # To publish the next version:
 # gem build tophatter-merchant.gemspec
-# gem push tophatter-merchant-1.1.8.gem
+# gem push tophatter-merchant-{VERSION}.gem
 Gem::Specification.new do |s|
   s.name        = 'tophatter-merchant'
-  s.version     = '1.1.9'
+  s.version     = '1.2.0'
   s.platform    = Gem::Platform::RUBY
   s.licenses    = ['MIT']
   s.authors     = ['Chris Estreich']

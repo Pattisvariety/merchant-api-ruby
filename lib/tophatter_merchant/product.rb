@@ -112,6 +112,11 @@ module TophatterMerchant
         Product.new post(url: "#{path}/enable.json", params: { identifier: id })
       end
 
+      # ap TophatterMerchant::Product.enable_catalog_only('FOOBAR').to_h
+      def enable_catalog_only(id)
+        Product.new post(url: "#{path}/enable_catalog_only.json", params: { identifier: id })
+      end
+
       # ap TophatterMerchant::Product.delete('FOOBAR').to_h
       # NOT DOCUMENTED
       def delete(id)
