@@ -16,7 +16,7 @@ module TophatterMerchant
                   :internal_id, :slug, # Admin
                   :admin_banned_at, :admin_hold_at, :admin_hold_responded_at, :admin_reason,
                   :success_fee_bid_enabled, :success_fee_bid,
-                  :health_status, :health_reason
+                  :health_status, :health_reason, :desirability_score
 
     def id
       created_at.present? ? identifier : nil
